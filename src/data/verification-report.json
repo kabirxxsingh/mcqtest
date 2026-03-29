@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-03-29T18:31:21.163Z",
+  "totalSets": 10,
+  "totalQuestions": 200,
+  "questionsByTopic": {
+    "HTML": 40,
+    "CSS": 40,
+    "JavaScript": 80,
+    "Mixed": 20,
+    "BestPractices": 20
+  },
+  "confidenceBreakdown": {
+    "high": 160,
+    "medium": 40
+  },
+  "checks": {
+    "setCount": "passed",
+    "perSetCount": "passed",
+    "uniqueQuestionIds": "passed",
+    "uniqueQuestionTexts": "passed",
+    "optionIntegrity": "passed",
+    "answerIndexIntegrity": "passed",
+    "explanationQuality": "passed"
+  }
+}

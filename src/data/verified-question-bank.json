@@ -1,0 +1,5134 @@
+{
+  "metadata": {
+    "title": "TCS UI MCQ Verified Question Bank",
+    "generatedAt": "2026-03-29T18:31:21.155Z",
+    "policy": "rephrased_only",
+    "targetExamContext": "TCS Ninja / TCS iON style HTML-CSS-JS assessments",
+    "sourceCatalog": {
+      "official": [
+        "https://www.tcsion.com/hub/national-qualifier-test/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+        "https://owasp.org/www-community/attacks/xss/"
+      ],
+      "prepPattern": [
+        "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+        "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+      ],
+      "communityPattern": [
+        "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+        "https://github.com/gdvtramarao/TCS-Xplore-UI-JavaScript-Hands-On-Solutions"
+      ]
+    },
+    "notes": [
+      "Questions are rewritten and normalized from standards + prep-pattern sources.",
+      "Raw candidate file is retained before final verification export."
+    ],
+    "verifiedAt": "2026-03-29T18:31:21.163Z",
+    "verificationPolicy": [
+      "exact-count-check",
+      "unique-question-id-check",
+      "unique-question-text-check",
+      "options-and-answer-index-check",
+      "explanation-quality-check"
+    ],
+    "totalSets": 10,
+    "totalQuestions": 200
+  },
+  "sets": [
+    {
+      "id": "set-1",
+      "setId": 1,
+      "title": "TCS UI Set 1 - HTML Foundations",
+      "description": "Core HTML structure, semantics, and essential tags frequently seen in entry-level UI MCQs.",
+      "topic": "HTML",
+      "questions": [
+        {
+          "id": "S1Q01",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Document Structure",
+          "difficulty": "easy",
+          "question": "What is the primary purpose of <!DOCTYPE html> in an HTML file?",
+          "options": [
+            "It improves accessibility and semantics.",
+            "It provides alternative text for accessibility and failed image loads.",
+            "It tells the browser to use HTML5 standards mode.",
+            "It is used to control layout behavior."
+          ],
+          "answerIndex": 2,
+          "explanation": "The doctype declaration enables standards-compliant rendering in modern browsers.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q02",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Document Structure",
+          "difficulty": "easy",
+          "question": "Which tag represents the root element of a valid HTML document?",
+          "options": [
+            "<title>",
+            "<h1>",
+            "<head>",
+            "<html>"
+          ],
+          "answerIndex": 3,
+          "explanation": "All visible and metadata content must live inside the root <html> element.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q03",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Document Structure",
+          "difficulty": "easy",
+          "question": "Which section typically contains metadata, links, and page-level configuration?",
+          "options": [
+            "<head>",
+            "<title>",
+            "<h1>",
+            "<html>"
+          ],
+          "answerIndex": 0,
+          "explanation": "The <head> section stores metadata, title, link, script references, and meta tags.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q04",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Metadata",
+          "difficulty": "easy",
+          "question": "Which tag defines the text shown on the browser tab?",
+          "options": [
+            "<meta charset=\"UTF-8\">",
+            "<title>",
+            "<head>",
+            "<html>"
+          ],
+          "answerIndex": 1,
+          "explanation": "The <title> element inside <head> controls tab title and bookmark name.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q05",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Semantics",
+          "difficulty": "easy",
+          "question": "Which tag should be used for the most important heading on a page?",
+          "options": [
+            "<strong>",
+            "<main>",
+            "<h1>",
+            "<html>"
+          ],
+          "answerIndex": 2,
+          "explanation": "Only one main heading is typically recommended for clear semantic structure.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q06",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Text Content",
+          "difficulty": "easy",
+          "question": "Which HTML element is used for a paragraph of text?",
+          "options": [
+            "<html>",
+            "<head>",
+            "<br>",
+            "<p>"
+          ],
+          "answerIndex": 3,
+          "explanation": "The paragraph element groups related sentences as a text block.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q07",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Lists",
+          "difficulty": "easy",
+          "question": "Which tag is used to create an unordered list?",
+          "options": [
+            "<ul>",
+            "<head>",
+            "<html>",
+            "<ol>"
+          ],
+          "answerIndex": 0,
+          "explanation": "Unordered lists show items with bullets by default.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q08",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Lists",
+          "difficulty": "easy",
+          "question": "Which tag is used to create an ordered (numbered) list?",
+          "options": [
+            "<ul>",
+            "<head>",
+            "<ol>",
+            "<html>"
+          ],
+          "answerIndex": 2,
+          "explanation": "Ordered lists render items in sequence, usually numbered.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q09",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Media & Accessibility",
+          "difficulty": "easy",
+          "question": "What is the main purpose of the alt attribute in an <img> tag?",
+          "options": [
+            "It provides alternative text for accessibility and failed image loads.",
+            "It improves accessibility and semantics.",
+            "It tells the browser to use HTML5 standards mode.",
+            "It is used to control layout behavior."
+          ],
+          "answerIndex": 0,
+          "explanation": "Screen readers and fallback rendering rely on alt text.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q10",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Links",
+          "difficulty": "easy",
+          "question": "Which attribute specifies the destination URL in an anchor element?",
+          "options": [
+            "class",
+            "name",
+            "href",
+            "id"
+          ],
+          "answerIndex": 2,
+          "explanation": "Without href, an anchor does not have a navigation target.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q11",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Text Content",
+          "difficulty": "easy",
+          "question": "Which HTML tag inserts a line break inside text?",
+          "options": [
+            "<head>",
+            "<br>",
+            "<p>",
+            "<html>"
+          ],
+          "answerIndex": 1,
+          "explanation": "The line break element creates a new line without starting a new paragraph.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q12",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Semantics",
+          "difficulty": "medium",
+          "question": "Which semantic tag should wrap the dominant content of a page?",
+          "options": [
+            "<main>",
+            "<h1>",
+            "<strong>",
+            "<html>"
+          ],
+          "answerIndex": 0,
+          "explanation": "<main> should contain unique core content, excluding repeated sidebars/nav.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q13",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Media",
+          "difficulty": "easy",
+          "question": "Which element is specifically intended to embed video content?",
+          "options": [
+            "<html>",
+            "<head>",
+            "<title>",
+            "<video>"
+          ],
+          "answerIndex": 3,
+          "explanation": "The <video> element supports native playback controls and source formats.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q14",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Tables",
+          "difficulty": "easy",
+          "question": "Which tag defines a table row?",
+          "options": [
+            "<tr>",
+            "<html>",
+            "<head>",
+            "<th>"
+          ],
+          "answerIndex": 0,
+          "explanation": "Rows are created using <tr> and contain header/data cells.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q15",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Tables",
+          "difficulty": "easy",
+          "question": "Which tag is used for a header cell inside a table?",
+          "options": [
+            "<head>",
+            "<th>",
+            "<tr>",
+            "<html>"
+          ],
+          "answerIndex": 1,
+          "explanation": "<th> cells are semantically headers and can improve table accessibility.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q16",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Syntax",
+          "difficulty": "easy",
+          "question": "Which syntax correctly writes a comment in HTML?",
+          "options": [
+            "<!-- comment -->",
+            "<input>",
+            "<html>",
+            "<head>"
+          ],
+          "answerIndex": 0,
+          "explanation": "HTML comments start with <!-- and end with -->.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q17",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Metadata",
+          "difficulty": "easy",
+          "question": "Which meta declaration is commonly used for UTF-8 character encoding?",
+          "options": [
+            "<title>",
+            "<html>",
+            "<head>",
+            "<meta charset=\"UTF-8\">"
+          ],
+          "answerIndex": 3,
+          "explanation": "UTF-8 supports a broad set of characters and is the standard default.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q18",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Links",
+          "difficulty": "easy",
+          "question": "Which value opens an anchor in a new tab/window when used with target?",
+          "options": [
+            "_blank",
+            "id",
+            "display",
+            "class"
+          ],
+          "answerIndex": 0,
+          "explanation": "target=\"_blank\" opens the destination in a new browsing context.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q19",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Syntax",
+          "difficulty": "medium",
+          "question": "Which of the following is a void element in HTML?",
+          "options": [
+            "<!-- comment -->",
+            "<input>",
+            "<head>",
+            "<html>"
+          ],
+          "answerIndex": 1,
+          "explanation": "Void elements do not require closing tags (e.g., input, img, br).",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S1Q20",
+          "setId": 1,
+          "topic": "HTML",
+          "subtopic": "Semantics",
+          "difficulty": "medium",
+          "question": "Which tag conveys strong importance (not just visual bold)?",
+          "options": [
+            "<main>",
+            "<html>",
+            "<h1>",
+            "<strong>"
+          ],
+          "answerIndex": 3,
+          "explanation": "<strong> has semantic emphasis, unlike purely visual styling.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://www.tcsion.com/hub/national-qualifier-test/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-2",
+      "setId": 2,
+      "title": "TCS UI Set 2 - Forms & Validation",
+      "description": "Form controls, attributes, and validation patterns aligned to common proctored UI MCQ style.",
+      "topic": "HTML",
+      "questions": [
+        {
+          "id": "S2Q01",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "easy",
+          "question": "If method is omitted in <form>, which HTTP method is used by default?",
+          "options": [
+            "autocomplete=\"off\"",
+            "GET",
+            "submit",
+            "action"
+          ],
+          "answerIndex": 1,
+          "explanation": "Browsers default form submission method to GET if method is not specified.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q02",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Input Types",
+          "difficulty": "easy",
+          "question": "Which input type masks user-entered characters on screen?",
+          "options": [
+            "password",
+            "checkbox",
+            "GET",
+            "placeholder"
+          ],
+          "answerIndex": 0,
+          "explanation": "type=\"password\" masks characters for privacy during entry.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q03",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Validation",
+          "difficulty": "easy",
+          "question": "Which attribute makes a form field mandatory before submission?",
+          "options": [
+            "for",
+            "name",
+            "id",
+            "required"
+          ],
+          "answerIndex": 3,
+          "explanation": "required triggers native browser validation on empty values.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q04",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Accessibility",
+          "difficulty": "easy",
+          "question": "Which attribute in <label> should match the target input id?",
+          "options": [
+            "for",
+            "name",
+            "id",
+            "required"
+          ],
+          "answerIndex": 0,
+          "explanation": "for=\"inputId\" binds the label to an input, improving usability/accessibility.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q05",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Input Types",
+          "difficulty": "easy",
+          "question": "How do radio buttons become mutually exclusive in a group?",
+          "options": [
+            "Its value is not submitted.",
+            "They share the same name attribute.",
+            "It is used to control layout behavior.",
+            "It improves accessibility and semantics."
+          ],
+          "answerIndex": 1,
+          "explanation": "Radio inputs with identical name values form one selectable group.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q06",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Input Types",
+          "difficulty": "easy",
+          "question": "Which control allows selecting multiple independent options?",
+          "options": [
+            "GET",
+            "password",
+            "checkbox",
+            "placeholder"
+          ],
+          "answerIndex": 2,
+          "explanation": "Checkboxes are independent toggles; radios are single-select in a group.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q07",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Input Types",
+          "difficulty": "easy",
+          "question": "Which HTML element creates a drop-down option list?",
+          "options": [
+            "<datalist>",
+            "<fieldset>",
+            "<textarea>",
+            "<select>"
+          ],
+          "answerIndex": 3,
+          "explanation": "<select> wraps one or more <option> elements for dropdown selection.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q08",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Input Types",
+          "difficulty": "easy",
+          "question": "Which form control is used for multi-line text input?",
+          "options": [
+            "<textarea>",
+            "<fieldset>",
+            "<datalist>",
+            "<select>"
+          ],
+          "answerIndex": 0,
+          "explanation": "<textarea> is designed for longer, multi-line user input.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q09",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "UX",
+          "difficulty": "easy",
+          "question": "Which attribute shows hint text inside an empty input box?",
+          "options": [
+            "GET",
+            "checkbox",
+            "placeholder",
+            "password"
+          ],
+          "answerIndex": 2,
+          "explanation": "Placeholder text appears until the user provides a value.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q10",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "easy",
+          "question": "Which input attribute determines the key used in submitted form data?",
+          "options": [
+            "required",
+            "id",
+            "for",
+            "name"
+          ],
+          "answerIndex": 3,
+          "explanation": "Server-side parsers use the input name as the field key.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q11",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "medium",
+          "question": "Inside a form, what is the default type of a <button> element?",
+          "options": [
+            "action",
+            "autocomplete=\"off\"",
+            "submit",
+            "GET"
+          ],
+          "answerIndex": 2,
+          "explanation": "Without an explicit type, <button> acts as submit in forms.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q12",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "easy",
+          "question": "Which form attribute specifies where submitted data is sent?",
+          "options": [
+            "autocomplete=\"off\"",
+            "action",
+            "GET",
+            "submit"
+          ],
+          "answerIndex": 1,
+          "explanation": "action contains the target URL for form submission.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q13",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "medium",
+          "question": "Which attribute can be used to disable browser autofill suggestions?",
+          "options": [
+            "autocomplete=\"off\"",
+            "GET",
+            "submit",
+            "action"
+          ],
+          "answerIndex": 0,
+          "explanation": "Setting autocomplete off requests browsers not to auto-fill fields.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q14",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Validation",
+          "difficulty": "medium",
+          "question": "Which attribute applies regex-like validation rules to input values?",
+          "options": [
+            "min and max",
+            "GET",
+            "novalidate",
+            "pattern"
+          ],
+          "answerIndex": 3,
+          "explanation": "pattern enables built-in value matching for specific string formats.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q15",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Validation",
+          "difficulty": "easy",
+          "question": "Which pair of attributes commonly sets lower and upper numeric limits?",
+          "options": [
+            "novalidate",
+            "GET",
+            "min and max",
+            "pattern"
+          ],
+          "answerIndex": 2,
+          "explanation": "min/max constrain number, date, and range-type input values.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q16",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "medium",
+          "question": "Which element semantically groups related form controls?",
+          "options": [
+            "<textarea>",
+            "<fieldset>",
+            "<legend>",
+            "<select>"
+          ],
+          "answerIndex": 1,
+          "explanation": "<fieldset> groups controls and often appears with a <legend>.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q17",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "medium",
+          "question": "Which element provides a caption/title for a fieldset?",
+          "options": [
+            "<legend>",
+            "<fieldset>",
+            "<select>",
+            "<textarea>"
+          ],
+          "answerIndex": 0,
+          "explanation": "<legend> describes the purpose of grouped controls.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q18",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Input Types",
+          "difficulty": "medium",
+          "question": "Which element provides predefined suggestions for an <input list=\"...\">?",
+          "options": [
+            "<select>",
+            "<textarea>",
+            "<fieldset>",
+            "<datalist>"
+          ],
+          "answerIndex": 3,
+          "explanation": "datalist offers selectable suggestions while still allowing custom input.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q19",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Validation",
+          "difficulty": "medium",
+          "question": "Which form attribute disables native browser validation on submit?",
+          "options": [
+            "novalidate",
+            "min and max",
+            "GET",
+            "pattern"
+          ],
+          "answerIndex": 0,
+          "explanation": "novalidate lets custom JavaScript validation run without browser blocking UI.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S2Q20",
+          "setId": 2,
+          "topic": "HTML",
+          "subtopic": "Forms",
+          "difficulty": "medium",
+          "question": "What happens to a disabled input during form submission?",
+          "options": [
+            "It improves accessibility and semantics.",
+            "They share the same name attribute.",
+            "Its value is not submitted.",
+            "It is used to control layout behavior."
+          ],
+          "answerIndex": 2,
+          "explanation": "Disabled controls are omitted from the submitted payload.",
+          "sourceType": "prep-pattern",
+          "sourceRef": [
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-3",
+      "setId": 3,
+      "title": "TCS UI Set 3 - CSS Core Concepts",
+      "description": "Selectors, box model, units, and positioning fundamentals for high-accuracy CSS rounds.",
+      "topic": "CSS",
+      "questions": [
+        {
+          "id": "S3Q01",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Syntax",
+          "difficulty": "easy",
+          "question": "Which syntax correctly applies a CSS rule?",
+          "options": [
+            "display: block;",
+            "position: relative;",
+            "selector { property: value; }",
+            "margin: 0 auto;"
+          ],
+          "answerIndex": 2,
+          "explanation": "CSS rules consist of selector + declaration block.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q02",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Styling Setup",
+          "difficulty": "easy",
+          "question": "Which rel value is used when linking an external stylesheet?",
+          "options": [
+            "*",
+            "stylesheet",
+            ".card",
+            "#header"
+          ],
+          "answerIndex": 1,
+          "explanation": "link rel=\"stylesheet\" tells the browser to treat the target as CSS.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q03",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Selectors",
+          "difficulty": "easy",
+          "question": "Which selector targets elements having class=\"card\"?",
+          "options": [
+            ".card",
+            "#header",
+            "*",
+            "stylesheet"
+          ],
+          "answerIndex": 0,
+          "explanation": "Class selectors are prefixed with a dot.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q04",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Selectors",
+          "difficulty": "easy",
+          "question": "Which selector targets the element with id=\"header\"?",
+          "options": [
+            ".card",
+            "*",
+            "stylesheet",
+            "#header"
+          ],
+          "answerIndex": 3,
+          "explanation": "ID selectors are prefixed with #.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q05",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Selectors",
+          "difficulty": "easy",
+          "question": "Which selector matches all elements on a page?",
+          "options": [
+            "*",
+            "#header",
+            "stylesheet",
+            ".card"
+          ],
+          "answerIndex": 0,
+          "explanation": "The universal selector applies to every element.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q06",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Selectors",
+          "difficulty": "medium",
+          "question": "What does the selector \"div p\" target?",
+          "options": [
+            "An ID selector has higher specificity than a class selector.",
+            "All <p> elements inside any <div>.",
+            "It starts on a new line and can take full available width.",
+            "content, padding, border, margin"
+          ],
+          "answerIndex": 1,
+          "explanation": "A descendant selector matches nested descendants, not only direct children.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q07",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Specificity",
+          "difficulty": "medium",
+          "question": "Which has higher specificity in CSS?",
+          "options": [
+            "content, padding, border, margin",
+            "All <p> elements inside any <div>.",
+            "An ID selector has higher specificity than a class selector.",
+            "It starts on a new line and can take full available width."
+          ],
+          "answerIndex": 2,
+          "explanation": "Specificity order favors IDs over classes and elements.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q08",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Box Model",
+          "difficulty": "easy",
+          "question": "Which list correctly represents the CSS box model layers?",
+          "options": [
+            "All <p> elements inside any <div>.",
+            "An ID selector has higher specificity than a class selector.",
+            "It clips overflowing content that does not fit the box.",
+            "content, padding, border, margin"
+          ],
+          "answerIndex": 3,
+          "explanation": "The box model starts from content and expands outward.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q09",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Box Model",
+          "difficulty": "medium",
+          "question": "Which rule commonly centers a fixed-width block horizontally?",
+          "options": [
+            "margin: 0 auto;",
+            "position: relative;",
+            "display: block;",
+            "selector { property: value; }"
+          ],
+          "answerIndex": 0,
+          "explanation": "Auto left/right margins center block-level elements with constrained width.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q10",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Display",
+          "difficulty": "easy",
+          "question": "How does display: block behave by default?",
+          "options": [
+            "It starts on a new line and can take full available width.",
+            "It allows setting width/height while still flowing inline.",
+            "Width and height generally do not apply in the same way as block boxes.",
+            "All <p> elements inside any <div>."
+          ],
+          "answerIndex": 0,
+          "explanation": "Block-level boxes break line flow and expand by default.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q11",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Display",
+          "difficulty": "medium",
+          "question": "What is true for display: inline elements?",
+          "options": [
+            "It starts on a new line and can take full available width.",
+            "All <p> elements inside any <div>.",
+            "It allows setting width/height while still flowing inline.",
+            "Width and height generally do not apply in the same way as block boxes."
+          ],
+          "answerIndex": 3,
+          "explanation": "Inline boxes flow with text and do not behave like block boxes.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q12",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Display",
+          "difficulty": "easy",
+          "question": "What is a key benefit of display: inline-block?",
+          "options": [
+            "It allows setting width/height while still flowing inline.",
+            "All <p> elements inside any <div>.",
+            "Width and height generally do not apply in the same way as block boxes.",
+            "It starts on a new line and can take full available width."
+          ],
+          "answerIndex": 0,
+          "explanation": "inline-block combines inline flow with box dimensions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q13",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Positioning",
+          "difficulty": "easy",
+          "question": "How does position: relative affect an element?",
+          "options": [
+            "The nearest positioned ancestor (or initial containing block if none).",
+            "All <p> elements inside any <div>.",
+            "The element remains in normal flow but can be offset from its original position.",
+            "On positioned elements in stacking contexts."
+          ],
+          "answerIndex": 2,
+          "explanation": "Relative positioning keeps layout space reserved.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q14",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Positioning",
+          "difficulty": "medium",
+          "question": "position: absolute is positioned relative to what by default?",
+          "options": [
+            "The nearest positioned ancestor (or initial containing block if none).",
+            "On positioned elements in stacking contexts.",
+            "The element remains in normal flow but can be offset from its original position.",
+            "All <p> elements inside any <div>."
+          ],
+          "answerIndex": 0,
+          "explanation": "Absolute elements use the closest ancestor with non-static position.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q15",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Positioning",
+          "difficulty": "medium",
+          "question": "When does z-index generally apply?",
+          "options": [
+            "The element remains in normal flow but can be offset from its original position.",
+            "All <p> elements inside any <div>.",
+            "The nearest positioned ancestor (or initial containing block if none).",
+            "On positioned elements in stacking contexts."
+          ],
+          "answerIndex": 3,
+          "explanation": "z-index influences stacking order when positioning/context rules apply.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q16",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Colors",
+          "difficulty": "easy",
+          "question": "Which value is a valid 6-digit hex color?",
+          "options": [
+            ".card",
+            "#header",
+            "#1A2B3C",
+            "stylesheet"
+          ],
+          "answerIndex": 2,
+          "explanation": "Hex colors use # followed by 3 or 6 hexadecimal digits.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q17",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Units",
+          "difficulty": "easy",
+          "question": "What is rem based on?",
+          "options": [
+            "An ID selector has higher specificity than a class selector.",
+            "The root element (html) font size.",
+            "The current element or parent font size context.",
+            "All <p> elements inside any <div>."
+          ],
+          "answerIndex": 1,
+          "explanation": "rem is stable across nesting because it references root font size.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q18",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Units",
+          "difficulty": "medium",
+          "question": "What is em based on?",
+          "options": [
+            "The current element or parent font size context.",
+            "The root element (html) font size.",
+            "All <p> elements inside any <div>.",
+            "An ID selector has higher specificity than a class selector."
+          ],
+          "answerIndex": 0,
+          "explanation": "em scales relative to surrounding font context and nesting.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q19",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Box Model",
+          "difficulty": "easy",
+          "question": "What does overflow: hidden do when content exceeds box bounds?",
+          "options": [
+            "content, padding, border, margin",
+            "All <p> elements inside any <div>.",
+            "An ID selector has higher specificity than a class selector.",
+            "It clips overflowing content that does not fit the box."
+          ],
+          "answerIndex": 3,
+          "explanation": "Overflow hidden removes scrollbars and hides excess content.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S3Q20",
+          "setId": 3,
+          "topic": "CSS",
+          "subtopic": "Visual Effects",
+          "difficulty": "easy",
+          "question": "Which numeric range is valid for opacity?",
+          "options": [
+            "stylesheet",
+            "0 to 1",
+            "#header",
+            ".card"
+          ],
+          "answerIndex": 1,
+          "explanation": "0 is fully transparent and 1 is fully opaque.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-4",
+      "setId": 4,
+      "title": "TCS UI Set 4 - Layout & Responsive Design",
+      "description": "Flexbox, Grid, media queries, and responsive behavior in practical UI implementation.",
+      "topic": "CSS",
+      "questions": [
+        {
+          "id": "S4Q01",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Flexbox",
+          "difficulty": "easy",
+          "question": "What is the default value of flex-direction in a flex container?",
+          "options": [
+            "justify-content",
+            "flex-wrap",
+            "align-items",
+            "row"
+          ],
+          "answerIndex": 3,
+          "explanation": "Flex items are laid out horizontally by default.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q02",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Flexbox",
+          "difficulty": "easy",
+          "question": "Which property aligns flex items along the main axis?",
+          "options": [
+            "align-items",
+            "flex-wrap",
+            "justify-content",
+            "row"
+          ],
+          "answerIndex": 2,
+          "explanation": "Main-axis distribution is controlled by justify-content.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q03",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Flexbox",
+          "difficulty": "easy",
+          "question": "Which property aligns flex items along the cross axis?",
+          "options": [
+            "flex-wrap",
+            "align-items",
+            "row",
+            "justify-content"
+          ],
+          "answerIndex": 1,
+          "explanation": "Cross-axis alignment in flex containers uses align-items.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q04",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Flexbox",
+          "difficulty": "easy",
+          "question": "Which flex property allows items to move to the next line?",
+          "options": [
+            "flex-wrap",
+            "row",
+            "justify-content",
+            "align-items"
+          ],
+          "answerIndex": 0,
+          "explanation": "flex-wrap: wrap lets overflowing items continue on new rows/columns.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q05",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Layout Spacing",
+          "difficulty": "easy",
+          "question": "Which property adds consistent spacing between flex/grid children?",
+          "options": [
+            "row",
+            "justify-content",
+            "align-items",
+            "gap"
+          ],
+          "answerIndex": 3,
+          "explanation": "gap works in modern flex and grid layouts.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q06",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Grid",
+          "difficulty": "easy",
+          "question": "Which CSS Grid property defines track columns explicitly?",
+          "options": [
+            "grid-template-columns",
+            "justify-content",
+            "align-items",
+            "row"
+          ],
+          "answerIndex": 0,
+          "explanation": "Grid columns are declared using grid-template-columns.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q07",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Grid",
+          "difficulty": "medium",
+          "question": "In CSS Grid, what does 1fr represent?",
+          "options": [
+            "Track size is at least 200px and can grow up to 1fr.",
+            "One fraction of the available free space.",
+            "1% of viewport height",
+            "1% of viewport width"
+          ],
+          "answerIndex": 1,
+          "explanation": "fr units divide leftover space proportionally.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q08",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Grid",
+          "difficulty": "medium",
+          "question": "What does minmax(200px, 1fr) mean in grid?",
+          "options": [
+            "1% of viewport width",
+            "One fraction of the available free space.",
+            "Track size is at least 200px and can grow up to 1fr.",
+            "1% of viewport height"
+          ],
+          "answerIndex": 2,
+          "explanation": "minmax defines lower and upper bounds for track sizing.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q09",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Media Queries",
+          "difficulty": "medium",
+          "question": "In mobile-first CSS, which query is commonly used to add larger-screen styles?",
+          "options": [
+            "row",
+            "justify-content",
+            "align-items",
+            "@media (min-width: 768px)"
+          ],
+          "answerIndex": 3,
+          "explanation": "Mobile-first starts base styles small and enhances with min-width breakpoints.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q10",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Responsive Basics",
+          "difficulty": "easy",
+          "question": "Which meta tag improves responsive sizing on mobile browsers?",
+          "options": [
+            "<div>",
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+            "<section>",
+            "<span>"
+          ],
+          "answerIndex": 1,
+          "explanation": "Without proper viewport meta, mobile browsers may scale pages unexpectedly.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q11",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Positioning",
+          "difficulty": "medium",
+          "question": "Which property value keeps an element fixed until a scroll threshold, then pins it?",
+          "options": [
+            "justify-content",
+            "row",
+            "position: sticky",
+            "align-items"
+          ],
+          "answerIndex": 2,
+          "explanation": "Sticky combines relative and fixed behavior based on scroll position.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q12",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Media",
+          "difficulty": "medium",
+          "question": "Which property controls how replaced content fills a media box?",
+          "options": [
+            "justify-content",
+            "align-items",
+            "row",
+            "object-fit"
+          ],
+          "answerIndex": 3,
+          "explanation": "object-fit defines image/video scaling behavior in assigned dimensions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q13",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Transforms",
+          "difficulty": "easy",
+          "question": "Which function is commonly used to move an element horizontally?",
+          "options": [
+            "translateX()",
+            "filter",
+            "map",
+            "clamp()"
+          ],
+          "answerIndex": 0,
+          "explanation": "transform: translateX(...) shifts elements on the X axis.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q14",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Animation",
+          "difficulty": "easy",
+          "question": "Which property enables smooth change between two CSS states?",
+          "options": [
+            "@keyframes",
+            "justify-content",
+            "transition",
+            "row"
+          ],
+          "answerIndex": 2,
+          "explanation": "Transitions animate changes in declared properties over time.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q15",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Animation",
+          "difficulty": "easy",
+          "question": "Which at-rule defines keyframes for CSS animations?",
+          "options": [
+            "@keyframes",
+            "row",
+            "transition",
+            "justify-content"
+          ],
+          "answerIndex": 0,
+          "explanation": "Keyframes specify animation stages between 0% and 100%.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q16",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Responsive Typography",
+          "difficulty": "medium",
+          "question": "Which CSS function is useful for fluid typography with min and max bounds?",
+          "options": [
+            "translateX()",
+            "filter",
+            "map",
+            "clamp()"
+          ],
+          "answerIndex": 3,
+          "explanation": "clamp(min, preferred, max) provides controlled responsive scaling.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q17",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Units",
+          "difficulty": "easy",
+          "question": "What does 1vw represent in CSS units?",
+          "options": [
+            "One fraction of the available free space.",
+            "Track size is at least 200px and can grow up to 1fr.",
+            "1% of viewport width",
+            "1% of viewport height"
+          ],
+          "answerIndex": 2,
+          "explanation": "Viewport width units scale with the current browser width.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q18",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Units",
+          "difficulty": "easy",
+          "question": "What does 1vh represent in CSS units?",
+          "options": [
+            "Track size is at least 200px and can grow up to 1fr.",
+            "1% of viewport height",
+            "1% of viewport width",
+            "One fraction of the available free space."
+          ],
+          "answerIndex": 1,
+          "explanation": "Viewport height units scale with the current browser height.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q19",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Pseudo-classes",
+          "difficulty": "easy",
+          "question": "Which pseudo-class applies when a pointer hovers over an element?",
+          "options": [
+            ":hover",
+            "row",
+            "justify-content",
+            "align-items"
+          ],
+          "answerIndex": 0,
+          "explanation": ":hover triggers style changes during pointer hover.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S4Q20",
+          "setId": 4,
+          "topic": "CSS",
+          "subtopic": "Accessibility",
+          "difficulty": "medium",
+          "question": "Which pseudo-class is preferred for accessible keyboard focus indication?",
+          "options": [
+            ":focus-visible",
+            "justify-content",
+            "align-items",
+            "row"
+          ],
+          "answerIndex": 0,
+          "explanation": ":focus-visible avoids showing focus ring for mouse-only interaction.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-5",
+      "setId": 5,
+      "title": "TCS UI Set 5 - JavaScript Fundamentals",
+      "description": "Core JavaScript behavior, type system, operators, and control flow essentials.",
+      "topic": "JavaScript",
+      "questions": [
+        {
+          "id": "S5Q01",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Variables",
+          "difficulty": "easy",
+          "question": "Which declaration has block scope and allows reassignment?",
+          "options": [
+            "let",
+            "var",
+            "const",
+            "\"object\""
+          ],
+          "answerIndex": 0,
+          "explanation": "let is block scoped and mutable.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q02",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Variables",
+          "difficulty": "easy",
+          "question": "Which declaration creates a block-scoped binding that cannot be reassigned?",
+          "options": [
+            "let",
+            "\"object\"",
+            "var",
+            "const"
+          ],
+          "answerIndex": 3,
+          "explanation": "const prevents reassignment of the binding name.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q03",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Variables",
+          "difficulty": "easy",
+          "question": "Which declaration is function-scoped and hoisted in legacy JavaScript?",
+          "options": [
+            "const",
+            "\"object\"",
+            "var",
+            "let"
+          ],
+          "answerIndex": 2,
+          "explanation": "var uses function scope and has historical hoisting behavior.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q04",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Types",
+          "difficulty": "medium",
+          "question": "What is the result of typeof null in JavaScript?",
+          "options": [
+            "const",
+            "\"object\"",
+            "\"undefined\"",
+            "let"
+          ],
+          "answerIndex": 1,
+          "explanation": "This is a long-standing JavaScript quirk.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q05",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Operators",
+          "difficulty": "easy",
+          "question": "Which operator checks both value and type equality?",
+          "options": [
+            "===",
+            "let",
+            "const",
+            "var"
+          ],
+          "answerIndex": 0,
+          "explanation": "Strict equality avoids type coercion.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q06",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Numbers",
+          "difficulty": "medium",
+          "question": "Which statement is true about NaN?",
+          "options": [
+            "It falls back only when the left side is null or undefined.",
+            "undefined without throwing an error",
+            "An empty string (\"\")",
+            "NaN is not equal to itself."
+          ],
+          "answerIndex": 3,
+          "explanation": "NaN !== NaN by specification.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q07",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Strings",
+          "difficulty": "easy",
+          "question": "Which string delimiter supports ${expression} interpolation?",
+          "options": [
+            "const",
+            "var",
+            "Backticks (` `)",
+            "let"
+          ],
+          "answerIndex": 2,
+          "explanation": "Template literals use backticks and allow interpolation.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q08",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Type Conversion",
+          "difficulty": "easy",
+          "question": "What does Number(\"42\") return?",
+          "options": [
+            "var",
+            "The number 42",
+            "let",
+            "const"
+          ],
+          "answerIndex": 1,
+          "explanation": "Number() performs numeric conversion.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q09",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Type Conversion",
+          "difficulty": "easy",
+          "question": "What is parseInt(\"08\", 10)?",
+          "options": [
+            "8",
+            "2",
+            "0",
+            "1"
+          ],
+          "answerIndex": 0,
+          "explanation": "With radix 10, parseInt parses decimal 08 as 8.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q10",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Booleans",
+          "difficulty": "easy",
+          "question": "What is Boolean(\"\")?",
+          "options": [
+            "false",
+            "undefined",
+            "null",
+            "true"
+          ],
+          "answerIndex": 0,
+          "explanation": "Empty strings are falsy values.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q11",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Booleans",
+          "difficulty": "medium",
+          "question": "What is Boolean(\"0\")?",
+          "options": [
+            "false",
+            "true",
+            "null",
+            "undefined"
+          ],
+          "answerIndex": 1,
+          "explanation": "Non-empty strings are truthy, including \"0\".",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q12",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Operators",
+          "difficulty": "medium",
+          "question": "What does the nullish coalescing operator (??) do?",
+          "options": [
+            "NaN is not equal to itself.",
+            "undefined without throwing an error",
+            "It falls back only when the left side is null or undefined.",
+            "An empty string (\"\")"
+          ],
+          "answerIndex": 2,
+          "explanation": "Unlike ||, ?? does not treat 0 or \"\" as missing.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q13",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Operators",
+          "difficulty": "medium",
+          "question": "What does optional chaining (?.) return when the base is null/undefined?",
+          "options": [
+            "NaN is not equal to itself.",
+            "An empty string (\"\")",
+            "It falls back only when the left side is null or undefined.",
+            "undefined without throwing an error"
+          ],
+          "answerIndex": 3,
+          "explanation": "Optional chaining short-circuits safe property access.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q14",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Types",
+          "difficulty": "easy",
+          "question": "What is typeof undefined?",
+          "options": [
+            "\"undefined\"",
+            "const",
+            "let",
+            "\"object\""
+          ],
+          "answerIndex": 0,
+          "explanation": "The typeof operator returns \"undefined\" for undefined values.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q15",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Numbers",
+          "difficulty": "medium",
+          "question": "What is isNaN(\"hello\")?",
+          "options": [
+            "false",
+            "null",
+            "true",
+            "undefined"
+          ],
+          "answerIndex": 2,
+          "explanation": "Global isNaN coerces and then tests numeric validity.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q16",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Numbers",
+          "difficulty": "medium",
+          "question": "What is Number.isNaN(\"hello\")?",
+          "options": [
+            "false",
+            "undefined",
+            "true",
+            "null"
+          ],
+          "answerIndex": 0,
+          "explanation": "Number.isNaN checks without coercion; string is not NaN.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q17",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Operators",
+          "difficulty": "medium",
+          "question": "What is 0 == false?",
+          "options": [
+            "false",
+            "null",
+            "undefined",
+            "true"
+          ],
+          "answerIndex": 3,
+          "explanation": "Loose equality performs coercion before comparison.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q18",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Operators",
+          "difficulty": "easy",
+          "question": "What is 0 === false?",
+          "options": [
+            "undefined",
+            "null",
+            "false",
+            "true"
+          ],
+          "answerIndex": 2,
+          "explanation": "Strict equality compares type and value.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q19",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Type Coercion",
+          "difficulty": "medium",
+          "question": "What is [] + [] in JavaScript?",
+          "options": [
+            "NaN is not equal to itself.",
+            "undefined without throwing an error",
+            "An empty string (\"\")",
+            "It falls back only when the left side is null or undefined."
+          ],
+          "answerIndex": 2,
+          "explanation": "Arrays are coerced to strings before concatenation.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S5Q20",
+          "setId": 5,
+          "topic": "JavaScript",
+          "subtopic": "Type Coercion",
+          "difficulty": "easy",
+          "question": "What is true + true in JavaScript?",
+          "options": [
+            "8",
+            "1",
+            "0",
+            "2"
+          ],
+          "answerIndex": 3,
+          "explanation": "Booleans convert to 1 and 1 in numeric addition.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-6",
+      "setId": 6,
+      "title": "TCS UI Set 6 - Functions, Arrays, and Objects",
+      "description": "Higher-order methods, object handling, and frequently tested JavaScript utility patterns.",
+      "topic": "JavaScript",
+      "questions": [
+        {
+          "id": "S6Q01",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "easy",
+          "question": "What does Array.prototype.map return?",
+          "options": [
+            "A new array containing elements that pass the test",
+            "The first matching element, or undefined",
+            "A new array with transformed elements",
+            "To accumulate array values into a single result"
+          ],
+          "answerIndex": 2,
+          "explanation": "map never mutates by default and returns a new collection.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q02",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "easy",
+          "question": "What does Array.prototype.filter return?",
+          "options": [
+            "A new array containing elements that pass the test",
+            "To accumulate array values into a single result",
+            "A new array with transformed elements",
+            "The first matching element, or undefined"
+          ],
+          "answerIndex": 0,
+          "explanation": "filter keeps only elements matching the predicate.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q03",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "medium",
+          "question": "What is the purpose of Array.prototype.reduce?",
+          "options": [
+            "A new array with transformed elements",
+            "The first matching element, or undefined",
+            "A new array containing elements that pass the test",
+            "To accumulate array values into a single result"
+          ],
+          "answerIndex": 3,
+          "explanation": "reduce folds values using an accumulator callback.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q04",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "easy",
+          "question": "What does Array.prototype.find return?",
+          "options": [
+            "A new array containing elements that pass the test",
+            "To accumulate array values into a single result",
+            "The first matching element, or undefined",
+            "A new array with transformed elements"
+          ],
+          "answerIndex": 2,
+          "explanation": "find stops at first predicate success.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q05",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "medium",
+          "question": "What does Array.prototype.forEach return?",
+          "options": [
+            "null",
+            "undefined",
+            "true",
+            "false"
+          ],
+          "answerIndex": 1,
+          "explanation": "forEach is for side effects, not transformed return values.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q06",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "easy",
+          "question": "What does array.push(value) return?",
+          "options": [
+            "The new array length",
+            "A new array containing elements that pass the test",
+            "A new array with transformed elements",
+            "To accumulate array values into a single result"
+          ],
+          "answerIndex": 0,
+          "explanation": "push mutates and returns length.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q07",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "easy",
+          "question": "What does array.pop() do?",
+          "options": [
+            "A new array with transformed elements",
+            "To accumulate array values into a single result",
+            "A new array containing elements that pass the test",
+            "Removes and returns the last element"
+          ],
+          "answerIndex": 3,
+          "explanation": "pop mutates the array from the end.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q08",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "easy",
+          "question": "What does array.shift() do?",
+          "options": [
+            "A new array containing elements that pass the test",
+            "To accumulate array values into a single result",
+            "Removes and returns the first element",
+            "A new array with transformed elements"
+          ],
+          "answerIndex": 2,
+          "explanation": "shift mutates from the beginning and reindexes.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q09",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "medium",
+          "question": "What does array.unshift(value) return?",
+          "options": [
+            "To accumulate array values into a single result",
+            "The new array length after adding to the front",
+            "A new array with transformed elements",
+            "A new array containing elements that pass the test"
+          ],
+          "answerIndex": 1,
+          "explanation": "unshift prepends elements and returns updated length.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q10",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Arrays",
+          "difficulty": "medium",
+          "question": "What does the spread syntax [...arr] create for arrays?",
+          "options": [
+            "A new array with transformed elements",
+            "A new array containing elements that pass the test",
+            "To accumulate array values into a single result",
+            "A shallow copy of the array"
+          ],
+          "answerIndex": 3,
+          "explanation": "Nested references remain shared because spread is shallow.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q11",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Syntax",
+          "difficulty": "easy",
+          "question": "What does this assignment do: const [a, b] = arr?",
+          "options": [
+            "Array destructuring into variables a and b",
+            "A new array containing elements that pass the test",
+            "To accumulate array values into a single result",
+            "A new array with transformed elements"
+          ],
+          "answerIndex": 0,
+          "explanation": "Destructuring extracts by index position.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q12",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Objects",
+          "difficulty": "easy",
+          "question": "Which method returns an array of object own enumerable keys?",
+          "options": [
+            "Object.prototype.hasOwnProperty()",
+            "Object.keys()",
+            "id",
+            "class"
+          ],
+          "answerIndex": 1,
+          "explanation": "Object.keys returns string keys in an array.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q13",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Objects",
+          "difficulty": "medium",
+          "question": "Which method checks whether an object has a specific own property?",
+          "options": [
+            "class",
+            "Object.keys()",
+            "Object.prototype.hasOwnProperty()",
+            "id"
+          ],
+          "answerIndex": 2,
+          "explanation": "hasOwnProperty avoids inherited property confusion.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q14",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "JSON",
+          "difficulty": "easy",
+          "question": "What does JSON.stringify(obj) produce?",
+          "options": [
+            "A new array with transformed elements",
+            "A new array containing elements that pass the test",
+            "A JavaScript value/object parsed from JSON text",
+            "A JSON string representation"
+          ],
+          "answerIndex": 3,
+          "explanation": "Stringify serializes plain data into JSON text.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q15",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "JSON",
+          "difficulty": "easy",
+          "question": "What does JSON.parse(jsonText) return?",
+          "options": [
+            "A JavaScript value/object parsed from JSON text",
+            "A new array containing elements that pass the test",
+            "A new array with transformed elements",
+            "A JSON string representation"
+          ],
+          "answerIndex": 0,
+          "explanation": "Parse converts JSON string into usable JS data.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q16",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Functions",
+          "difficulty": "medium",
+          "question": "How does this behave in arrow functions?",
+          "options": [
+            "It usually refers to the object before the dot",
+            "When the argument is undefined",
+            "Arrow functions do not bind their own this",
+            "A function that retains access to outer lexical variables"
+          ],
+          "answerIndex": 2,
+          "explanation": "Arrow this is lexical (captured from surrounding scope).",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q17",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Functions",
+          "difficulty": "medium",
+          "question": "How is this determined in a regular method call obj.fn()?",
+          "options": [
+            "It usually refers to the object before the dot",
+            "A function that retains access to outer lexical variables",
+            "Arrow functions do not bind their own this",
+            "When the argument is undefined"
+          ],
+          "answerIndex": 0,
+          "explanation": "Method invocation sets this to the receiver object.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q18",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Functions",
+          "difficulty": "medium",
+          "question": "What is a closure in JavaScript?",
+          "options": [
+            "It usually refers to the object before the dot",
+            "When the argument is undefined",
+            "Arrow functions do not bind their own this",
+            "A function that retains access to outer lexical variables"
+          ],
+          "answerIndex": 3,
+          "explanation": "Closures keep scope references after outer execution completes.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q19",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Functions",
+          "difficulty": "medium",
+          "question": "When are default function parameters applied?",
+          "options": [
+            "When the argument is undefined",
+            "A function that retains access to outer lexical variables",
+            "It usually refers to the object before the dot",
+            "Arrow functions do not bind their own this"
+          ],
+          "answerIndex": 0,
+          "explanation": "Defaults do not apply for null unless explicitly handled.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S6Q20",
+          "setId": 6,
+          "topic": "JavaScript",
+          "subtopic": "Functions",
+          "difficulty": "easy",
+          "question": "What does a rest parameter (...args) collect?",
+          "options": [
+            "Remaining arguments as an array",
+            "It usually refers to the object before the dot",
+            "Arrow functions do not bind their own this",
+            "A function that retains access to outer lexical variables"
+          ],
+          "answerIndex": 0,
+          "explanation": "Rest parameters gather variadic inputs into one array.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-7",
+      "setId": 7,
+      "title": "TCS UI Set 7 - DOM & Events",
+      "description": "Document manipulation and event model behavior often tested in practical JavaScript rounds.",
+      "topic": "JavaScript",
+      "questions": [
+        {
+          "id": "S7Q01",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Selection",
+          "difficulty": "easy",
+          "question": "Which DOM API selects one element by its id value?",
+          "options": [
+            "document.getElementById()",
+            "textContent",
+            "document.querySelectorAll()",
+            "document.querySelector()"
+          ],
+          "answerIndex": 0,
+          "explanation": "getElementById returns the unique element for a given id, if present.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q02",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Selection",
+          "difficulty": "easy",
+          "question": "Which method returns the first element that matches a CSS selector?",
+          "options": [
+            "document.getElementById()",
+            "textContent",
+            "document.querySelector()",
+            "document.querySelectorAll()"
+          ],
+          "answerIndex": 2,
+          "explanation": "querySelector accepts any valid CSS selector and returns first match.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q03",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Selection",
+          "difficulty": "easy",
+          "question": "Which method returns all matches for a CSS selector?",
+          "options": [
+            "document.querySelectorAll()",
+            "document.querySelector()",
+            "document.getElementById()",
+            "textContent"
+          ],
+          "answerIndex": 0,
+          "explanation": "querySelectorAll returns a static NodeList of matches.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q04",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Content",
+          "difficulty": "easy",
+          "question": "Which property sets or gets only textual content (no HTML parsing)?",
+          "options": [
+            "document.getElementById()",
+            "document.querySelector()",
+            "innerHTML",
+            "textContent"
+          ],
+          "answerIndex": 3,
+          "explanation": "textContent is safer when you only need plain text.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q05",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Content",
+          "difficulty": "medium",
+          "question": "Which property parses a string as HTML and injects nodes?",
+          "options": [
+            "innerHTML",
+            "document.querySelector()",
+            "document.getElementById()",
+            "textContent"
+          ],
+          "answerIndex": 0,
+          "explanation": "innerHTML supports markup insertion but needs sanitization for untrusted input.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q06",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Manipulation",
+          "difficulty": "easy",
+          "question": "Which method creates a new element node in memory?",
+          "options": [
+            "element.remove()",
+            "element.classList.toggle()",
+            "document.createElement()",
+            "element.classList.add()"
+          ],
+          "answerIndex": 2,
+          "explanation": "createElement prepares a node before insertion into DOM.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q07",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Manipulation",
+          "difficulty": "easy",
+          "question": "Which method appends a node as the last child?",
+          "options": [
+            "appendChild()",
+            "setAttribute()",
+            "addEventListener()",
+            "removeAttribute()"
+          ],
+          "answerIndex": 0,
+          "explanation": "appendChild inserts nodes at the end of a parent.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q08",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Manipulation",
+          "difficulty": "easy",
+          "question": "Which method removes an element from the DOM directly?",
+          "options": [
+            "document.createElement()",
+            "element.classList.toggle()",
+            "element.classList.add()",
+            "element.remove()"
+          ],
+          "answerIndex": 3,
+          "explanation": "remove deletes the element itself from its parent.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q09",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "Events",
+          "difficulty": "easy",
+          "question": "Which method registers an event listener on an element?",
+          "options": [
+            "setAttribute()",
+            "removeAttribute()",
+            "addEventListener()",
+            "appendChild()"
+          ],
+          "answerIndex": 2,
+          "explanation": "Listeners can be attached for click, input, keydown, and more.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q10",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "Events",
+          "difficulty": "medium",
+          "question": "In an event handler, what does event.target usually represent?",
+          "options": [
+            "The actual element that triggered the event",
+            "The element the listener is attached to",
+            "Stops the browser default action for that event",
+            "Stops the event from bubbling/capturing further"
+          ],
+          "answerIndex": 0,
+          "explanation": "target is where the event originated.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q11",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "Events",
+          "difficulty": "medium",
+          "question": "In an event handler, what does event.currentTarget represent?",
+          "options": [
+            "The actual element that triggered the event",
+            "Stops the browser default action for that event",
+            "Stops the event from bubbling/capturing further",
+            "The element the listener is attached to"
+          ],
+          "answerIndex": 3,
+          "explanation": "currentTarget can differ from target due to bubbling/capturing.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q12",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "Events",
+          "difficulty": "easy",
+          "question": "What does event.preventDefault() do?",
+          "options": [
+            "Stops the browser default action for that event",
+            "The element the listener is attached to",
+            "Stops the event from bubbling/capturing further",
+            "The actual element that triggered the event"
+          ],
+          "answerIndex": 0,
+          "explanation": "Example: prevent link navigation or form submission default behavior.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q13",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "Events",
+          "difficulty": "medium",
+          "question": "What does event.stopPropagation() do?",
+          "options": [
+            "The actual element that triggered the event",
+            "Stops the event from bubbling/capturing further",
+            "Stops the browser default action for that event",
+            "The element the listener is attached to"
+          ],
+          "answerIndex": 1,
+          "explanation": "It prevents propagation to ancestors in current event flow.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q14",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "Lifecycle",
+          "difficulty": "medium",
+          "question": "When does DOMContentLoaded fire?",
+          "options": [
+            "The element the listener is attached to",
+            "The actual element that triggered the event",
+            "After initial HTML is parsed (before all assets necessarily load)",
+            "Stops the browser default action for that event"
+          ],
+          "answerIndex": 2,
+          "explanation": "DOMContentLoaded is ideal for DOM setup without waiting for images.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q15",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Manipulation",
+          "difficulty": "easy",
+          "question": "Which API adds a CSS class to an element in a semantic way?",
+          "options": [
+            "element.remove()",
+            "element.classList.toggle()",
+            "document.createElement()",
+            "element.classList.add()"
+          ],
+          "answerIndex": 3,
+          "explanation": "classList avoids manual string parsing in className.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q16",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Manipulation",
+          "difficulty": "easy",
+          "question": "Which API toggles a class on/off?",
+          "options": [
+            "element.classList.toggle()",
+            "element.remove()",
+            "element.classList.add()",
+            "document.createElement()"
+          ],
+          "answerIndex": 0,
+          "explanation": "toggle is useful for interactive states such as menus/modals.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q17",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Traversal",
+          "difficulty": "medium",
+          "question": "Which method finds the nearest ancestor matching a selector?",
+          "options": [
+            "document.getElementById()",
+            "element.closest()",
+            "document.querySelectorAll()",
+            "document.querySelector()"
+          ],
+          "answerIndex": 1,
+          "explanation": "closest traverses upward including the element itself.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q18",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Attributes",
+          "difficulty": "easy",
+          "question": "How are custom data-* attributes commonly accessed in JS?",
+          "options": [
+            "The element the listener is attached to",
+            "The actual element that triggered the event",
+            "Through the element.dataset object",
+            "Stops the browser default action for that event"
+          ],
+          "answerIndex": 2,
+          "explanation": "data-user-id maps to dataset.userId.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q19",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Attributes",
+          "difficulty": "easy",
+          "question": "Which method sets or updates an attribute value on an element?",
+          "options": [
+            "appendChild()",
+            "addEventListener()",
+            "removeAttribute()",
+            "setAttribute()"
+          ],
+          "answerIndex": 3,
+          "explanation": "setAttribute(name, value) writes attribute data.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S7Q20",
+          "setId": 7,
+          "topic": "JavaScript",
+          "subtopic": "DOM Attributes",
+          "difficulty": "easy",
+          "question": "Which method removes an attribute from an element?",
+          "options": [
+            "setAttribute()",
+            "addEventListener()",
+            "removeAttribute()",
+            "appendChild()"
+          ],
+          "answerIndex": 2,
+          "explanation": "removeAttribute(name) deletes an existing attribute.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-8",
+      "setId": 8,
+      "title": "TCS UI Set 8 - Browser APIs & Async JS",
+      "description": "Storage, fetch, promises, async/await, and browser utility APIs for real app scenarios.",
+      "topic": "JavaScript",
+      "questions": [
+        {
+          "id": "S8Q01",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Storage",
+          "difficulty": "easy",
+          "question": "How long does localStorage data persist by default?",
+          "options": [
+            "Convert it using JSON.stringify()",
+            "A Promise that resolves to a Response object",
+            "For the lifetime of the current tab/session",
+            "Until it is explicitly cleared"
+          ],
+          "answerIndex": 3,
+          "explanation": "localStorage survives tab and browser restarts for same origin.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q02",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Storage",
+          "difficulty": "easy",
+          "question": "How long does sessionStorage data persist?",
+          "options": [
+            "For the lifetime of the current tab/session",
+            "Convert it using JSON.stringify()",
+            "A Promise that resolves to a Response object",
+            "Until it is explicitly cleared"
+          ],
+          "answerIndex": 0,
+          "explanation": "sessionStorage is scoped to a browsing session/tab.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q03",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Storage",
+          "difficulty": "easy",
+          "question": "What data type does localStorage store natively?",
+          "options": [
+            "A Promise",
+            "Strings",
+            "URLSearchParams",
+            "Call clearInterval(intervalId)"
+          ],
+          "answerIndex": 1,
+          "explanation": "Complex values must be serialized to strings first.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q04",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Storage",
+          "difficulty": "easy",
+          "question": "What should you do before saving an object to localStorage?",
+          "options": [
+            "For the lifetime of the current tab/session",
+            "Until it is explicitly cleared",
+            "Convert it using JSON.stringify()",
+            "A Promise that resolves to a Response object"
+          ],
+          "answerIndex": 2,
+          "explanation": "Stringify serializes object data for storage.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q05",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Fetch API",
+          "difficulty": "easy",
+          "question": "What does fetch() return immediately?",
+          "options": [
+            "Until it is explicitly cleared",
+            "For the lifetime of the current tab/session",
+            "A Promise resolving to parsed JSON data",
+            "A Promise that resolves to a Response object"
+          ],
+          "answerIndex": 3,
+          "explanation": "fetch is asynchronous and returns a promise.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q06",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Fetch API",
+          "difficulty": "medium",
+          "question": "What does response.json() return?",
+          "options": [
+            "A Promise resolving to parsed JSON data",
+            "For the lifetime of the current tab/session",
+            "Until it is explicitly cleared",
+            "A Promise that resolves to a Response object"
+          ],
+          "answerIndex": 0,
+          "explanation": "json() itself is asynchronous.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q07",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Async/Await",
+          "difficulty": "easy",
+          "question": "What is always returned by an async function?",
+          "options": [
+            "Strings",
+            "URLSearchParams",
+            "A Promise",
+            "Call clearInterval(intervalId)"
+          ],
+          "answerIndex": 2,
+          "explanation": "Async functions wrap return values in resolved promises.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q08",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Async/Await",
+          "difficulty": "medium",
+          "question": "Where can await be used directly?",
+          "options": [
+            "Inside an async function (or supported module top-level contexts)",
+            "Until it is explicitly cleared",
+            "Use try/catch around await",
+            "For the lifetime of the current tab/session"
+          ],
+          "answerIndex": 0,
+          "explanation": "Classic function bodies need async keyword for await.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q09",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Async/Await",
+          "difficulty": "easy",
+          "question": "How do you catch errors from an awaited promise?",
+          "options": [
+            "Inside an async function (or supported module top-level contexts)",
+            "For the lifetime of the current tab/session",
+            "Until it is explicitly cleared",
+            "Use try/catch around await"
+          ],
+          "answerIndex": 3,
+          "explanation": "Rejected promises throw inside async functions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q10",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Timers",
+          "difficulty": "easy",
+          "question": "What does setTimeout do?",
+          "options": [
+            "For the lifetime of the current tab/session",
+            "Runs a callback once after a delay",
+            "Runs a callback repeatedly at a time interval",
+            "Until it is explicitly cleared"
+          ],
+          "answerIndex": 1,
+          "explanation": "setTimeout schedules one-time deferred execution.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q11",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Timers",
+          "difficulty": "easy",
+          "question": "What does setInterval do?",
+          "options": [
+            "Runs a callback repeatedly at a time interval",
+            "Runs a callback once after a delay",
+            "Until it is explicitly cleared",
+            "For the lifetime of the current tab/session"
+          ],
+          "answerIndex": 0,
+          "explanation": "Intervals continue until cleared.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q12",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Timers",
+          "difficulty": "easy",
+          "question": "How do you stop a running interval?",
+          "options": [
+            "Strings",
+            "A Promise",
+            "URLSearchParams",
+            "Call clearInterval(intervalId)"
+          ],
+          "answerIndex": 3,
+          "explanation": "clearInterval cancels future interval ticks.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q13",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "URL APIs",
+          "difficulty": "easy",
+          "question": "Which API helps read query parameters like ?page=2 from a URL?",
+          "options": [
+            "URLSearchParams",
+            "A Promise",
+            "Call clearInterval(intervalId)",
+            "Strings"
+          ],
+          "answerIndex": 0,
+          "explanation": "URLSearchParams offers easy get/set/iterate for query strings.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q14",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Navigator API",
+          "difficulty": "medium",
+          "question": "What does navigator.onLine indicate?",
+          "options": [
+            "Convert it using JSON.stringify()",
+            "A basic online/offline network connectivity hint",
+            "Until it is explicitly cleared",
+            "For the lifetime of the current tab/session"
+          ],
+          "answerIndex": 1,
+          "explanation": "It is a heuristic flag and not perfect network guarantee.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q15",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "History API",
+          "difficulty": "easy",
+          "question": "What does history.back() do?",
+          "options": [
+            "Navigates to the previous browser history entry",
+            "Until it is explicitly cleared",
+            "For the lifetime of the current tab/session",
+            "Convert it using JSON.stringify()"
+          ],
+          "answerIndex": 0,
+          "explanation": "Equivalent to clicking browser back in many contexts.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q16",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Location API",
+          "difficulty": "easy",
+          "question": "What does location.reload() do?",
+          "options": [
+            "Until it is explicitly cleared",
+            "For the lifetime of the current tab/session",
+            "Convert it using JSON.stringify()",
+            "Reloads the current document"
+          ],
+          "answerIndex": 3,
+          "explanation": "The browser re-requests or reloads current URL resources.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q17",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Cookies",
+          "difficulty": "medium",
+          "question": "How are cookies exposed in JavaScript on document?",
+          "options": [
+            "As a semicolon-separated string in document.cookie",
+            "For the lifetime of the current tab/session",
+            "Convert it using JSON.stringify()",
+            "Until it is explicitly cleared"
+          ],
+          "answerIndex": 0,
+          "explanation": "document.cookie reads/writes cookie text format.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q18",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "URL APIs",
+          "difficulty": "easy",
+          "question": "Which function safely encodes text for use in query parameter values?",
+          "options": [
+            "map",
+            "encodeURIComponent()",
+            "reduce",
+            "filter"
+          ],
+          "answerIndex": 1,
+          "explanation": "It escapes reserved/special URL characters in components.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q19",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Promises",
+          "difficulty": "medium",
+          "question": "How does Promise.all behave if one input promise rejects?",
+          "options": [
+            "Until it is explicitly cleared",
+            "It settles as soon as the first promise settles",
+            "It rejects immediately with that rejection reason",
+            "For the lifetime of the current tab/session"
+          ],
+          "answerIndex": 2,
+          "explanation": "Promise.all requires all promises to fulfill.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S8Q20",
+          "setId": 8,
+          "topic": "JavaScript",
+          "subtopic": "Promises",
+          "difficulty": "medium",
+          "question": "How does Promise.race settle?",
+          "options": [
+            "It settles as soon as the first promise settles",
+            "For the lifetime of the current tab/session",
+            "Until it is explicitly cleared",
+            "It rejects immediately with that rejection reason"
+          ],
+          "answerIndex": 0,
+          "explanation": "Race returns the first fulfilled or rejected outcome.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+            "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-9",
+      "setId": 9,
+      "title": "TCS UI Set 9 - Mixed Output & Logic",
+      "description": "Output-focused MCQs in the style of placement/proctored rounds with deterministic answers.",
+      "topic": "Mixed",
+      "questions": [
+        {
+          "id": "S9Q01",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(1 + \"2\") ?",
+          "options": [
+            "\"12\"",
+            "\"number\"",
+            "\"ABC\"",
+            "\"51\""
+          ],
+          "answerIndex": 0,
+          "explanation": "Number + string triggers string concatenation.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q02",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(\"5\" - 2) ?",
+          "options": [
+            "9",
+            "4",
+            "8",
+            "3"
+          ],
+          "answerIndex": 3,
+          "explanation": "The - operator coerces operands to numbers.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q03",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "medium",
+          "question": "What is logged by: console.log(typeof NaN) ?",
+          "options": [
+            "\"number\"",
+            "\"ABC\"",
+            "\"51\"",
+            "\"12\""
+          ],
+          "answerIndex": 0,
+          "explanation": "NaN is a special numeric value.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q04",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "medium",
+          "question": "What is logged by: console.log(Boolean([])) ?",
+          "options": [
+            "false",
+            "true",
+            "null",
+            "undefined"
+          ],
+          "answerIndex": 1,
+          "explanation": "Any object, including arrays, is truthy.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q05",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "hard",
+          "question": "What is logged by: console.log([] == false) ?",
+          "options": [
+            "undefined",
+            "false",
+            "true",
+            "null"
+          ],
+          "answerIndex": 2,
+          "explanation": "Loose equality coercion makes this expression true.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q06",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log([1,2,3].length) ?",
+          "options": [
+            "4",
+            "8",
+            "9",
+            "3"
+          ],
+          "answerIndex": 3,
+          "explanation": "length returns the number of array slots.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q07",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(\"abc\".toUpperCase()) ?",
+          "options": [
+            "\"ABC\"",
+            "\"51\"",
+            "\"number\"",
+            "\"12\""
+          ],
+          "answerIndex": 0,
+          "explanation": "toUpperCase converts letters to uppercase.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q08",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(Math.max(4, 9, 1)) ?",
+          "options": [
+            "3",
+            "8",
+            "9",
+            "4"
+          ],
+          "answerIndex": 2,
+          "explanation": "Math.max returns largest argument.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q09",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(Math.floor(4.9)) ?",
+          "options": [
+            "4",
+            "9",
+            "3",
+            "8"
+          ],
+          "answerIndex": 0,
+          "explanation": "Math.floor truncates down to nearest integer.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q10",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(\"5\" + 1) ?",
+          "options": [
+            "\"number\"",
+            "\"ABC\"",
+            "\"51\"",
+            "\"12\""
+          ],
+          "answerIndex": 2,
+          "explanation": "String concatenation occurs with + and a string operand.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q11",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(2 ** 3) ?",
+          "options": [
+            "4",
+            "8",
+            "3",
+            "9"
+          ],
+          "answerIndex": 1,
+          "explanation": "** is exponentiation in JavaScript.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q12",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(10 % 3) ?",
+          "options": [
+            "1",
+            "3",
+            "9",
+            "4"
+          ],
+          "answerIndex": 0,
+          "explanation": "% returns remainder after division.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q13",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "medium",
+          "question": "What is logged by: console.log([1,2].concat([3]).join(\"-\")) ?",
+          "options": [
+            "\"12\"",
+            "\"ABC\"",
+            "\"number\"",
+            "\"1-2-3\""
+          ],
+          "answerIndex": 3,
+          "explanation": "concat merges arrays, join builds a hyphen-delimited string.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q14",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(\"hello\".includes(\"ell\")) ?",
+          "options": [
+            "undefined",
+            "null",
+            "true",
+            "false"
+          ],
+          "answerIndex": 2,
+          "explanation": "includes checks if a substring exists.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q15",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "medium",
+          "question": "What is logged by: console.log(typeof []) ?",
+          "options": [
+            "\"ABC\"",
+            "\"object\"",
+            "\"12\"",
+            "\"number\""
+          ],
+          "answerIndex": 1,
+          "explanation": "Arrays are specialized objects in JS.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q16",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "medium",
+          "question": "What is logged by: console.log(null == undefined) ?",
+          "options": [
+            "true",
+            "false",
+            "undefined",
+            "null"
+          ],
+          "answerIndex": 0,
+          "explanation": "Loose equality treats null and undefined as equal.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q17",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log(null === undefined) ?",
+          "options": [
+            "true",
+            "undefined",
+            "null",
+            "false"
+          ],
+          "answerIndex": 3,
+          "explanation": "Strict equality requires identical type and value.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q18",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "easy",
+          "question": "What is logged by: console.log([...\"hi\"].length) ?",
+          "options": [
+            "2",
+            "9",
+            "4",
+            "3"
+          ],
+          "answerIndex": 0,
+          "explanation": "Spreading string into array yields one item per character.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q19",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "medium",
+          "question": "What is logged by: console.log(parseInt(\"101\", 2)) ?",
+          "options": [
+            "3",
+            "5",
+            "4",
+            "9"
+          ],
+          "answerIndex": 1,
+          "explanation": "Binary 101 equals decimal 5.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S9Q20",
+          "setId": 9,
+          "topic": "Mixed",
+          "subtopic": "JS Output",
+          "difficulty": "medium",
+          "question": "What is logged by: console.log(Number.isInteger(4.0)) ?",
+          "options": [
+            "undefined",
+            "null",
+            "false",
+            "true"
+          ],
+          "answerIndex": 3,
+          "explanation": "4.0 is numerically an integer value.",
+          "sourceType": "community-pattern",
+          "sourceRef": [
+            "https://gyanwithanjaan.blogspot.com/2023/04/tcs-xplore-2023-ui-html-css-javascript.html",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          ],
+          "confidence": "medium",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    },
+    {
+      "id": "set-10",
+      "setId": 10,
+      "title": "TCS UI Set 10 - Web Best Practices",
+      "description": "Security, performance, and accessibility concepts useful in practical UI interviews and assessments.",
+      "topic": "BestPractices",
+      "questions": [
+        {
+          "id": "S10Q01",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Security",
+          "difficulty": "easy",
+          "question": "What is the main benefit of using HTTPS instead of HTTP?",
+          "options": [
+            "Execution of unauthorized scripts and injected content",
+            "Escape or sanitize untrusted input before insertion.",
+            "It encrypts data in transit between client and server.",
+            "To prevent reverse-tabnabbing and isolate window context"
+          ],
+          "answerIndex": 2,
+          "explanation": "HTTPS protects confidentiality and integrity during network transfer.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q02",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Security",
+          "difficulty": "medium",
+          "question": "What is a primary frontend defense against XSS when rendering user data?",
+          "options": [
+            "It encrypts data in transit between client and server.",
+            "Escape or sanitize untrusted input before insertion.",
+            "To prevent reverse-tabnabbing and isolate window context",
+            "Execution of unauthorized scripts and injected content"
+          ],
+          "answerIndex": 1,
+          "explanation": "Untrusted HTML/JS must never be injected unsafely.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q03",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Security",
+          "difficulty": "medium",
+          "question": "What does a Content Security Policy (CSP) help mitigate?",
+          "options": [
+            "Execution of unauthorized scripts and injected content",
+            "Escape or sanitize untrusted input before insertion.",
+            "To prevent reverse-tabnabbing and isolate window context",
+            "It encrypts data in transit between client and server."
+          ],
+          "answerIndex": 0,
+          "explanation": "CSP restricts trusted resource origins and script behavior.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q04",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Security",
+          "difficulty": "medium",
+          "question": "Why add rel=\"noopener noreferrer\" to target=\"_blank\" links?",
+          "options": [
+            "It encrypts data in transit between client and server.",
+            "Escape or sanitize untrusted input before insertion.",
+            "Execution of unauthorized scripts and injected content",
+            "To prevent reverse-tabnabbing and isolate window context"
+          ],
+          "answerIndex": 3,
+          "explanation": "noopener breaks window.opener linkage to improve security.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q05",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Accessibility",
+          "difficulty": "easy",
+          "question": "Why use semantic HTML elements instead of generic divs everywhere?",
+          "options": [
+            "They improve accessibility and document meaning.",
+            "A concise description of the image meaning/function",
+            "Every control should have an associated label.",
+            "It encrypts data in transit between client and server."
+          ],
+          "answerIndex": 0,
+          "explanation": "Semantic structure helps screen readers and maintainability.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q06",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Accessibility",
+          "difficulty": "easy",
+          "question": "For informative images, what should alt text provide?",
+          "options": [
+            "It encrypts data in transit between client and server.",
+            "A concise description of the image meaning/function",
+            "They improve accessibility and document meaning.",
+            "Every control should have an associated label."
+          ],
+          "answerIndex": 1,
+          "explanation": "Alt should communicate useful content, not file names.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q07",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Accessibility",
+          "difficulty": "easy",
+          "question": "What is a key accessibility rule for form controls?",
+          "options": [
+            "A concise description of the image meaning/function",
+            "It encrypts data in transit between client and server.",
+            "Every control should have an associated label.",
+            "They improve accessibility and document meaning."
+          ],
+          "answerIndex": 2,
+          "explanation": "Labels improve usability for all users and assistive tech.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q08",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Accessibility",
+          "difficulty": "medium",
+          "question": "Which ARIA feature helps announce dynamic updates to assistive tech?",
+          "options": [
+            "loading=\"lazy\"",
+            "Throttling",
+            "Debouncing",
+            "aria-live"
+          ],
+          "answerIndex": 3,
+          "explanation": "aria-live regions announce changing content updates.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q09",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Performance",
+          "difficulty": "easy",
+          "question": "How can you reduce initial network payload size for faster load?",
+          "options": [
+            "Minify and compress assets",
+            "It delays script execution until after HTML parsing.",
+            "External files improve caching and policy control.",
+            "It encrypts data in transit between client and server."
+          ],
+          "answerIndex": 0,
+          "explanation": "Minification and compression reduce transfer bytes.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q10",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Performance",
+          "difficulty": "easy",
+          "question": "Which image attribute defers offscreen image loading?",
+          "options": [
+            "Throttling",
+            "aria-live",
+            "loading=\"lazy\"",
+            "Debouncing"
+          ],
+          "answerIndex": 2,
+          "explanation": "Lazy loading postpones non-critical image fetches.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q11",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Performance",
+          "difficulty": "medium",
+          "question": "How does using defer on script tags help page rendering?",
+          "options": [
+            "Minify and compress assets",
+            "It encrypts data in transit between client and server.",
+            "External files improve caching and policy control.",
+            "It delays script execution until after HTML parsing."
+          ],
+          "answerIndex": 3,
+          "explanation": "defer prevents parser blocking for external scripts.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q12",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Performance",
+          "difficulty": "medium",
+          "question": "Why avoid large inline scripts/styles in production pages?",
+          "options": [
+            "External files improve caching and policy control.",
+            "It delays script execution until after HTML parsing.",
+            "Minify and compress assets",
+            "It encrypts data in transit between client and server."
+          ],
+          "answerIndex": 0,
+          "explanation": "External assets are cacheable and easier to secure/manage.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q13",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Performance",
+          "difficulty": "medium",
+          "question": "Which browser API is preferred for smooth animation loops?",
+          "options": [
+            "map",
+            "reduce",
+            "requestAnimationFrame()",
+            "filter"
+          ],
+          "answerIndex": 2,
+          "explanation": "requestAnimationFrame syncs with repaint cycles for efficiency.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q14",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Performance",
+          "difficulty": "medium",
+          "question": "Which technique limits rapid function calls until user stops typing?",
+          "options": [
+            "Debouncing",
+            "aria-live",
+            "Throttling",
+            "loading=\"lazy\""
+          ],
+          "answerIndex": 0,
+          "explanation": "Debounce delays execution until activity settles.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q15",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Performance",
+          "difficulty": "medium",
+          "question": "Which technique guarantees execution at most once per interval during frequent events?",
+          "options": [
+            "Debouncing",
+            "aria-live",
+            "loading=\"lazy\"",
+            "Throttling"
+          ],
+          "answerIndex": 3,
+          "explanation": "Throttle caps call frequency during bursts like scrolling.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q16",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "PWA",
+          "difficulty": "medium",
+          "question": "What is a common advantage of service workers in web apps?",
+          "options": [
+            "Escape or sanitize untrusted input before insertion.",
+            "It encrypts data in transit between client and server.",
+            "Offline caching and network interception capabilities",
+            "Execution of unauthorized scripts and injected content"
+          ],
+          "answerIndex": 2,
+          "explanation": "Service workers can cache assets and serve offline experiences.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q17",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Security",
+          "difficulty": "medium",
+          "question": "Where is it generally safer to keep highly sensitive session tokens?",
+          "options": [
+            "It encrypts data in transit between client and server.",
+            "HttpOnly secure cookies managed by the server",
+            "Execution of unauthorized scripts and injected content",
+            "Escape or sanitize untrusted input before insertion."
+          ],
+          "answerIndex": 1,
+          "explanation": "HttpOnly cookies are not readable by JavaScript, reducing XSS exposure.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q18",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Security",
+          "difficulty": "medium",
+          "question": "What does the same-origin policy primarily restrict?",
+          "options": [
+            "Cross-origin read access to protected resources",
+            "Escape or sanitize untrusted input before insertion.",
+            "Execution of unauthorized scripts and injected content",
+            "It encrypts data in transit between client and server."
+          ],
+          "answerIndex": 0,
+          "explanation": "SOP prevents arbitrary reading across different origins.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q19",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "Security",
+          "difficulty": "medium",
+          "question": "Which response header controls allowed cross-origin request origins?",
+          "options": [
+            "aria-live",
+            "loading=\"lazy\"",
+            "Debouncing",
+            "Access-Control-Allow-Origin"
+          ],
+          "answerIndex": 3,
+          "explanation": "CORS policies are communicated using this header.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        },
+        {
+          "id": "S10Q20",
+          "setId": 10,
+          "topic": "BestPractices",
+          "subtopic": "UX",
+          "difficulty": "easy",
+          "question": "Which approach helps maintain positive UX during async operations?",
+          "options": [
+            "Execution of unauthorized scripts and injected content",
+            "Show clear loading and success/error feedback states",
+            "It encrypts data in transit between client and server.",
+            "Escape or sanitize untrusted input before insertion."
+          ],
+          "answerIndex": 1,
+          "explanation": "Feedback reduces user confusion and improves trust.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://owasp.org/www-community/attacks/xss/",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "verified",
+          "verifiedAt": "2026-03-29T18:31:21.163Z"
+        }
+      ]
+    }
+  ]
+}
