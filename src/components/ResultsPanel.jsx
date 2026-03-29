@@ -20,7 +20,7 @@ const ResultsPanel = ({
   return (
     <section className="result-panel fade-in">
       <header>
-        <p className="set-tag">Set {setData.setId} Result</p>
+        <p className="set-tag">{setData.domain ?? 'Web/UI'} • Set {setData.setId} Result</p>
         <h2>{setData.title}</h2>
         <p className="meta-line">
           Completed on {formatDateTime(result.finishedAt)} • Mode: {result.mode}

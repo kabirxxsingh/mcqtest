@@ -1,6 +1,6 @@
 export const validateQuestionBank = (
   questionBank,
-  { expectedSetCount = 10, expectedQuestionsPerSet = 20 } = {},
+  { expectedSetCount = null, expectedQuestionsPerSet = 20 } = {},
 ) => {
   const errors = []
 
@@ -11,7 +11,7 @@ export const validateQuestionBank = (
     }
   }
 
-  if (questionBank.sets.length !== expectedSetCount) {
+  if (Number.isInteger(expectedSetCount) && questionBank.sets.length !== expectedSetCount) {
     errors.push(
       `Expected ${expectedSetCount} sets but found ${questionBank.sets.length}.`,
     )

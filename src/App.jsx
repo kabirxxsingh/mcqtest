@@ -26,6 +26,14 @@ import {
 
 const validation = validateQuestionBank(questionBank)
 
+const DOMAIN_ORDER = ['Web/UI', 'SQL', 'PL/SQL']
+
+const DOMAIN_LABELS = {
+  'Web/UI': 'Web/UI',
+  SQL: 'SQL',
+  'PL/SQL': 'PL/SQL',
+}
+
 const normalizeHistoryForSet = (history, setId) => {
   const rawAttempts = history[setId]
   if (!Array.isArray(rawAttempts)) {
@@ -89,8 +97,23 @@ function App() {
   const [view, setView] = useState(recoveredState.view)
   const [, setClockTick] = useState(0)
   const [statusMessage, setStatusMessage] = useState(recoveredState.statusMessage)
+  const [selectedDomain, setSelectedDomain] = useState('Web/UI')
 
   const sets = questionBank.sets
+
+  const domains = useMemo(() => {
+    const present = new Set(sets.map((set) => set.domain ?? 'Web/UI'))
+    return DOMAIN_ORDER.filter((domain) => present.has(domain))
+  }, [sets])
+
+  const effectiveSelectedDomain = domains.includes(selectedDomain)
+    ? selectedDomain
+    : (domains[0] ?? 'Web/UI')
+
+  const visibleSets = useMemo(
+    () => sets.filter((set) => (set.domain ?? 'Web/UI') === effectiveSelectedDomain),
+    [sets, effectiveSelectedDomain],
+  )
 
   const questionsById = useMemo(() => buildQuestionIndex(sets), [sets])
 
@@ -302,10 +325,10 @@ function App() {
     <main className="app-shell">
       <section className="hero-panel glow-slide">
         <div>
-          <p className="tag">TCS Ninja UI Prep</p>
-          <h1>VQuest - HTML, CSS, JavaScript MCQ Arena</h1>
+          <p className="tag">TCS Ninja Multi-Domain Prep</p>
+          <h1>VQuest - Web/UI, SQL, and PL/SQL MCQ Arena</h1>
           <p className="hero-description">
-            10 verified sets, 200 rephrased questions, confidence-tagged sources, and
+            Verified multi-domain sets, rephrased questions, confidence-tagged sources, and
             localStorage-powered progress tracking.
           </p>
         </div>
@@ -334,8 +357,25 @@ function App() {
 
       {view === 'sets' ? (
         <>
+          <section className="domain-tabs" aria-label="Domain selection">
+            {domains.map((domain) => {
+              const isActive = domain === effectiveSelectedDomain
+              return (
+                <button
+                  key={domain}
+                  type="button"
+                  className={`domain-tab ${isActive ? 'active' : ''}`}
+                  onClick={() => setSelectedDomain(domain)}
+                  aria-pressed={isActive}
+                >
+                  {DOMAIN_LABELS[domain] ?? domain}
+                </button>
+              )
+            })}
+          </section>
+
           <section className="set-grid">
-            {sets.map((set) => (
+            {visibleSets.map((set) => (
               <SetCard
                 key={set.id}
                 setData={set}

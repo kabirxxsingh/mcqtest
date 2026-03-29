@@ -14,6 +14,8 @@ const SOURCE_CATALOG = {
     'https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage',
     'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API',
     'https://owasp.org/www-community/attacks/xss/',
+    'https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/',
+    'https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/',
   ],
   prepPattern: [
     'https://prepinsta.com/tcs-ninja-placement-papers-and-questions/',
@@ -29,6 +31,8 @@ const FALLBACK_BY_TOPIC = {
   HTML: ['<main>', '<section>', '<article>', '<nav>', '<header>', '<footer>'],
   CSS: ['display', 'position', 'flex', 'grid', 'margin', 'padding'],
   JavaScript: ['undefined', 'NaN', 'Promise', 'async', 'await', 'closure'],
+  SQL: ['SELECT', 'WHERE', 'GROUP BY', 'HAVING', 'JOIN', 'ORDER BY'],
+  'PL/SQL': ['BEGIN', 'END', 'DECLARE', 'EXCEPTION', 'CURSOR', 'PACKAGE'],
   Mixed: ['true', 'false', 'undefined', 'null', 'NaN', '0'],
   BestPractices: ['HTTPS', 'CSP', 'debounce', 'throttle', 'lazy loading', 'noopener'],
 }
@@ -52,6 +56,50 @@ const FALLBACK_BY_KIND = {
     'It handles asynchronous operations safely.',
   ],
   token: ['class', 'id', 'display', 'Promise', 'href', 'required'],
+}
+
+const CURATED_DISTRACTORS_BY_SET = {
+  10: {
+    Security: [
+      'Content-Security-Policy',
+      'X-Frame-Options',
+      'Strict-Transport-Security',
+      'Referrer-Policy',
+      'X-Content-Type-Options',
+      'SameSite',
+      'HttpOnly',
+    ],
+    Accessibility: [
+      'aria-hidden',
+      'role="presentation"',
+      'aria-label',
+      'aria-describedby',
+      'tabindex',
+      'lang',
+    ],
+    Performance: [
+      'setTimeout()',
+      'setInterval()',
+      'queueMicrotask()',
+      'requestIdleCallback()',
+      'IntersectionObserver',
+      'Memoization',
+      'Batching',
+      'Recursion',
+      'prefetch',
+      'preload',
+    ],
+    PWA: [
+      'Direct DOM access from background threads',
+      'Automatic SQL database encryption in browser',
+      'Guaranteed real-time server connectivity',
+    ],
+    UX: [
+      'Hide all progress indicators until completion',
+      'Block the entire UI for every request',
+      'Retry indefinitely without user messaging',
+    ],
+  },
 }
 
 const classifyAnswerKind = (answer) => {
@@ -130,6 +178,7 @@ const buildSet = ({
   setId,
   title,
   description,
+  domain = 'Web/UI',
   topic,
   sourceType,
   sourceRef,
@@ -163,21 +212,40 @@ const buildSet = ({
       }
     }
 
-    addCandidates(
-      answerMeta.filter(
-        (entry) =>
-          entry.subtopic === item.subtopic &&
-          entry.kind === answerKind &&
-          entry.answer !== item.answer,
-      ),
-    )
-
-    if (distractors.length < 3) {
+    if (setId !== 10) {
       addCandidates(
         answerMeta.filter(
-          (entry) => entry.kind === answerKind && entry.answer !== item.answer,
+          (entry) =>
+            entry.subtopic === item.subtopic &&
+            entry.kind === answerKind &&
+            entry.answer !== item.answer,
         ),
       )
+
+      if (distractors.length < 3) {
+        addCandidates(
+          answerMeta.filter(
+            (entry) => entry.kind === answerKind && entry.answer !== item.answer,
+          ),
+        )
+      }
+    }
+
+    if (distractors.length < 3) {
+      const curated = CURATED_DISTRACTORS_BY_SET[setId]?.[item.subtopic] ?? []
+      for (const candidate of curated) {
+        const candidateKind = classifyAnswerKind(candidate)
+        if (
+          candidate !== item.answer &&
+          distractors.includes(candidate) === false &&
+          candidateKind === answerKind
+        ) {
+          distractors.push(candidate)
+        }
+        if (distractors.length >= 3) {
+          break
+        }
+      }
     }
 
     const kindFallback = FALLBACK_BY_KIND[answerKind] ?? FALLBACK_BY_KIND.token
@@ -198,7 +266,20 @@ const buildSet = ({
       throw new Error(`Could not build distractors for ${id}`)
     }
 
-    const options = seededShuffle([item.answer, ...distractors.slice(0, 3)], id)
+    let options = seededShuffle([item.answer, ...distractors.slice(0, 3)], id)
+
+    if (Array.isArray(item.options) && item.options.length === 4) {
+      options = item.options
+
+      if (options.includes(item.answer) === false) {
+        throw new Error('Provided options for ' + id + ' must include the answer')
+      }
+
+      if (new Set(options).size !== options.length) {
+        throw new Error('Provided options for ' + id + ' contain duplicate options')
+      }
+    }
+
     const answerIndex = options.indexOf(item.answer)
 
     return {
@@ -223,6 +304,7 @@ const buildSet = ({
     setId,
     title,
     description,
+    domain,
     topic,
     questions,
   }
@@ -531,16 +613,295 @@ const setDefinitions = [
       { question: 'Which approach helps maintain positive UX during async operations?', answer: 'Show clear loading and success/error feedback states', explanation: 'Feedback reduces user confusion and improves trust.', subtopic: 'UX', difficulty: 'easy' },
     ],
   },
+  {
+    setId: 11,
+    title: 'TCS SQL Set 1 - SQL Fundamentals',
+    description: 'Core SQL statements, filtering, sorting, and DML basics aligned to placement-style MCQs.',
+    domain: 'SQL',
+    topic: 'SQL',
+    sourceType: 'official-docs',
+    sourceRef: [SOURCE_CATALOG.official[8], SOURCE_CATALOG.prepPattern[0]],
+    items: [
+      { question: 'Which SQL statement is used to read data from a table?', answer: 'SELECT', explanation: 'SELECT retrieves rows and columns from database objects.', subtopic: 'Core Commands', difficulty: 'easy' },
+      { question: 'Which clause filters rows before grouping or final output?', answer: 'WHERE', explanation: 'WHERE applies row-level filtering before GROUP BY processing.', subtopic: 'Filtering', difficulty: 'easy' },
+      { question: 'Which clause sorts query output rows?', answer: 'ORDER BY', explanation: 'ORDER BY arranges result rows by one or more expressions.', subtopic: 'Sorting', difficulty: 'easy' },
+      { question: 'Which statement inserts new rows into a table?', answer: 'INSERT', explanation: 'INSERT adds new records into a target table.', subtopic: 'DML', difficulty: 'easy' },
+      { question: 'Which statement modifies existing rows in a table?', answer: 'UPDATE', explanation: 'UPDATE changes values of existing rows that match conditions.', subtopic: 'DML', difficulty: 'easy' },
+      { question: 'Which statement removes rows from a table (with optional condition)?', answer: 'DELETE', explanation: 'DELETE removes selected rows and can be restricted using WHERE.', subtopic: 'DML', difficulty: 'easy' },
+      { question: 'Which operator is used to match a value against a pattern in SQL?', answer: 'LIKE', explanation: 'LIKE supports pattern matching with wildcard characters.', subtopic: 'Filtering', difficulty: 'easy' },
+      { question: 'In SQL LIKE patterns, which wildcard matches any sequence of characters?', answer: '%', explanation: 'Percent (%) in LIKE patterns matches zero or more characters.', subtopic: 'Filtering', difficulty: 'easy' },
+      { question: 'In SQL LIKE patterns, which wildcard matches exactly one character?', answer: '_', explanation: 'Underscore (_) matches a single character in LIKE.', subtopic: 'Filtering', difficulty: 'easy' },
+      { question: 'Which predicate checks whether a value exists inside a provided list?', answer: 'IN', explanation: 'IN simplifies multiple OR equality checks.', subtopic: 'Filtering', difficulty: 'easy' },
+      { question: 'Which predicate checks whether a value falls within a range inclusive?', answer: 'BETWEEN', explanation: 'BETWEEN checks lower and upper bounds inclusively.', subtopic: 'Filtering', difficulty: 'easy' },
+      { question: 'Which predicate checks for missing/unknown values in SQL?', answer: 'IS NULL', explanation: 'NULL comparisons require IS NULL instead of equals operator.', subtopic: 'Null Handling', difficulty: 'easy' },
+      { question: 'Which operator combines two conditions where both must be true?', answer: 'AND', explanation: 'AND returns true only when both boolean conditions are true.', subtopic: 'Conditions', difficulty: 'easy' },
+      { question: 'Which operator combines conditions where at least one must be true?', answer: 'OR', explanation: 'OR returns true when any condition in the expression is true.', subtopic: 'Conditions', difficulty: 'easy' },
+      { question: 'Which operator negates a condition in SQL?', answer: 'NOT', explanation: 'NOT flips a boolean expression from true to false or vice versa.', subtopic: 'Conditions', difficulty: 'easy' },
+      { question: 'Which function returns the number of rows in a result set?', answer: 'COUNT()', explanation: 'COUNT returns row counts; COUNT(*) includes NULL rows too.', subtopic: 'Functions', difficulty: 'easy' },
+      { question: 'Which function returns the highest value in a numeric column?', answer: 'MAX()', explanation: 'MAX computes the largest value from selected rows.', subtopic: 'Functions', difficulty: 'easy' },
+      { question: 'Which function returns the smallest value in a numeric column?', answer: 'MIN()', explanation: 'MIN computes the smallest value from selected rows.', subtopic: 'Functions', difficulty: 'easy' },
+      { question: 'Which function returns the arithmetic mean of numeric values?', answer: 'AVG()', explanation: 'AVG calculates average from non-null numeric values.', subtopic: 'Functions', difficulty: 'easy' },
+      { question: 'Which function returns the total sum of numeric values?', answer: 'SUM()', explanation: 'SUM aggregates numeric values across selected rows.', subtopic: 'Functions', difficulty: 'easy' },
+    ],
+  },
+  {
+    setId: 12,
+    title: 'TCS SQL Set 2 - Joins & Set Operations',
+    description: 'Join behavior, set operators, aliases, and practical result-combination concepts.',
+    domain: 'SQL',
+    topic: 'SQL',
+    sourceType: 'official-docs',
+    sourceRef: [SOURCE_CATALOG.official[8], SOURCE_CATALOG.prepPattern[1]],
+    items: [
+      { question: 'Which join returns rows with matching keys in both joined tables?', answer: 'INNER JOIN', explanation: 'INNER JOIN includes only rows satisfying the join condition.', subtopic: 'Joins', difficulty: 'easy' },
+      { question: 'Which join returns all rows from left table and matching rows from right table?', answer: 'LEFT JOIN', explanation: 'LEFT JOIN preserves all left-side rows and fills unmatched right columns with NULL.', subtopic: 'Joins', difficulty: 'easy' },
+      { question: 'Which join returns all rows from right table and matching rows from left table?', answer: 'RIGHT JOIN', explanation: 'RIGHT JOIN preserves all right-side rows and null-fills missing left matches.', subtopic: 'Joins', difficulty: 'easy' },
+      { question: 'Which join returns all rows when there is a match in either table?', answer: 'FULL OUTER JOIN', explanation: 'FULL OUTER JOIN combines left and right preservation behavior.', subtopic: 'Joins', difficulty: 'medium' },
+      { question: 'Which join pairs each row from one table with every row from another table?', answer: 'CROSS JOIN', explanation: 'CROSS JOIN creates Cartesian product across both inputs.', subtopic: 'Joins', difficulty: 'easy' },
+      {
+        question: 'What is a self join?',
+        answer: 'A table joined to itself using aliases',
+        options: [
+          'A table joined to itself using aliases',
+          'A join that keeps only matching rows',
+          'A join returning all rows from left table',
+          'A set operator that removes duplicates',
+        ],
+        explanation: 'Self joins compare rows within the same table instance.',
+        subtopic: 'Joins',
+        difficulty: 'medium',
+      },
+      { question: 'Which keyword renames columns or tables temporarily in a query?', answer: 'AS', explanation: 'AS creates readable aliases for columns or table references.', subtopic: 'Aliases', difficulty: 'easy' },
+      { question: 'Which set operator returns distinct rows from both queries?', answer: 'UNION', explanation: 'UNION removes duplicates while combining compatible result sets.', subtopic: 'Set Operators', difficulty: 'easy' },
+      { question: 'Which set operator returns all rows from both queries including duplicates?', answer: 'UNION ALL', explanation: 'UNION ALL keeps duplicate rows and avoids duplicate elimination overhead.', subtopic: 'Set Operators', difficulty: 'easy' },
+      { question: 'Which set operator returns common rows between two query results?', answer: 'INTERSECT', explanation: 'INTERSECT keeps rows present in both result sets.', subtopic: 'Set Operators', difficulty: 'medium' },
+      { question: 'Which set operator returns rows from first query that are absent in second?', answer: 'MINUS', explanation: 'In Oracle, MINUS performs set difference (first minus second).', subtopic: 'Set Operators', difficulty: 'medium' },
+      { question: 'Which clause defines how two tables are related in a JOIN?', answer: 'ON', explanation: 'ON provides join-condition logic for matching rows.', subtopic: 'Joins', difficulty: 'easy' },
+      { question: 'Which SQL construct is preferred over old comma joins for clarity?', answer: 'Explicit JOIN syntax', explanation: 'Explicit JOIN ... ON is clearer and less error-prone than comma joins.', subtopic: 'Joins', difficulty: 'medium' },
+      { question: 'When no join condition is provided between two tables, what results?', answer: 'Cartesian product', explanation: 'Without join criteria, every row pairs with every row.', subtopic: 'Joins', difficulty: 'easy' },
+      { question: 'In a LEFT JOIN, unmatched rows from right table are filled with what?', answer: 'NULL values', explanation: 'Missing right-table matches are represented as NULL in output columns.', subtopic: 'Joins', difficulty: 'easy' },
+      {
+        question: 'Which join is commonly used to find unmatched rows by checking right key IS NULL?',
+        answer: 'LEFT JOIN with IS NULL filter',
+        options: [
+          'LEFT JOIN with IS NULL filter',
+          'FULL OUTER JOIN with ON 1=1',
+          'CROSS JOIN with DISTINCT',
+          'RIGHT JOIN with GROUP BY',
+        ],
+        explanation: 'Left-anti pattern uses LEFT JOIN and IS NULL to detect non-matches.',
+        subtopic: 'Joins',
+        difficulty: 'medium',
+      },
+      {
+        question: 'What must be true for set operators like UNION and INTERSECT?',
+        answer: 'Queries must return same number of columns with compatible types',
+        options: [
+          'Queries must return same number of columns with compatible types',
+          'Both queries must reference the same table names',
+          'Each query must include ORDER BY before UNION',
+          'All selected columns must be numeric only',
+        ],
+        explanation: 'Set operators require structurally compatible select lists.',
+        subtopic: 'Set Operators',
+        difficulty: 'medium',
+      },
+      { question: 'Which clause can still sort results after using UNION?', answer: 'Final ORDER BY', explanation: 'ORDER BY is applied once on the combined final result set.', subtopic: 'Set Operators', difficulty: 'medium' },
+      { question: 'Which join keeps only matching rows and excludes all unmatched rows?', answer: 'INNER JOIN', explanation: 'Only rows satisfying the ON condition are returned.', subtopic: 'Joins', difficulty: 'easy' },
+      {
+        question: 'In SQL, why are table aliases useful in multi-table joins?',
+        answer: 'They make column references shorter and less ambiguous',
+        options: [
+          'They make column references shorter and less ambiguous',
+          'They automatically index joined columns',
+          'They enforce foreign key constraints',
+          'They convert OUTER JOIN to INNER JOIN',
+        ],
+        explanation: 'Aliases improve readability and resolve repeated table-name verbosity.',
+        subtopic: 'Aliases',
+        difficulty: 'easy',
+      },
+    ],
+  },
+  {
+    setId: 13,
+    title: 'TCS SQL Set 3 - Grouping, Subqueries, and Constraints',
+    description: 'GROUP BY, HAVING, nested queries, keys, and integrity rules often tested in SQL rounds.',
+    domain: 'SQL',
+    topic: 'SQL',
+    sourceType: 'official-docs',
+    sourceRef: [SOURCE_CATALOG.official[8], SOURCE_CATALOG.prepPattern[0]],
+    items: [
+      { question: 'Which clause groups rows sharing the same values?', answer: 'GROUP BY', explanation: 'GROUP BY forms groups for aggregate calculations.', subtopic: 'Aggregation', difficulty: 'easy' },
+      { question: 'Which clause filters grouped results after aggregation?', answer: 'HAVING', explanation: 'HAVING applies conditions to grouped rows/aggregates.', subtopic: 'Aggregation', difficulty: 'easy' },
+      { question: 'Which clause filters rows before aggregation happens?', answer: 'WHERE', explanation: 'WHERE executes before GROUP BY and aggregate computation.', subtopic: 'Aggregation', difficulty: 'easy' },
+      { question: 'Which aggregate function counts only non-NULL values in an expression?', answer: 'COUNT(column_name)', explanation: 'COUNT(column) ignores NULLs unlike COUNT(*).', subtopic: 'Aggregation', difficulty: 'medium' },
+      { question: 'Which keyword returns only unique rows from SELECT output?', answer: 'DISTINCT', explanation: 'DISTINCT eliminates duplicate rows from the final projection.', subtopic: 'Result Shaping', difficulty: 'easy' },
+      {
+        question: 'What is a scalar subquery?',
+        answer: 'A subquery that returns exactly one value',
+        options: [
+          'A subquery that returns exactly one value',
+          'A subquery that returns multiple rows and multiple columns only',
+          'A subquery used only in FROM clause',
+          'A subquery that modifies table structure',
+        ],
+        explanation: 'Scalar subqueries can be used where a single expression is expected.',
+        subtopic: 'Subqueries',
+        difficulty: 'medium',
+      },
+      { question: 'Which operator is commonly used with subqueries that return multiple values?', answer: 'IN', explanation: 'IN checks membership against value lists returned by subqueries.', subtopic: 'Subqueries', difficulty: 'easy' },
+      { question: 'Which operator checks whether at least one row is returned by a subquery?', answer: 'EXISTS', explanation: 'EXISTS stops on first match and is efficient for existence checks.', subtopic: 'Subqueries', difficulty: 'medium' },
+      {
+        question: 'What is a correlated subquery?',
+        answer: 'A subquery that references columns from the outer query',
+        options: [
+          'A subquery that references columns from the outer query',
+          'A subquery that always returns one row',
+          'A subquery that can run only with GROUP BY',
+          'A subquery that cannot use WHERE clause',
+        ],
+        explanation: 'Correlated subqueries are evaluated in relation to outer-row context.',
+        subtopic: 'Subqueries',
+        difficulty: 'medium',
+      },
+      { question: 'Which key uniquely identifies each row in a table?', answer: 'PRIMARY KEY', explanation: 'Primary key enforces uniqueness and disallows NULL values.', subtopic: 'Constraints', difficulty: 'easy' },
+      { question: 'Which key enforces referential integrity by pointing to another table key?', answer: 'FOREIGN KEY', explanation: 'Foreign keys link child rows to parent-table key values.', subtopic: 'Constraints', difficulty: 'easy' },
+      { question: 'Which constraint ensures column values are unique (NULL handling DB-specific)?', answer: 'UNIQUE', explanation: 'UNIQUE prevents duplicate non-identical constrained values.', subtopic: 'Constraints', difficulty: 'easy' },
+      { question: 'Which constraint prevents NULL values in a column?', answer: 'NOT NULL', explanation: 'NOT NULL requires a value for every inserted/updated row.', subtopic: 'Constraints', difficulty: 'easy' },
+      { question: 'Which constraint validates values using a logical condition?', answer: 'CHECK', explanation: 'CHECK enforces domain rules through boolean expressions.', subtopic: 'Constraints', difficulty: 'easy' },
+      { question: 'Which SQL command removes all rows quickly and resets high-water behavior without row-by-row logging semantics?', answer: 'TRUNCATE', explanation: 'TRUNCATE removes all rows at table level and differs from DELETE behavior.', subtopic: 'DML/DDL', difficulty: 'medium' },
+      { question: 'Which command permanently removes a table definition and its data?', answer: 'DROP TABLE', explanation: 'DROP TABLE deletes both structure and data object definition.', subtopic: 'DDL', difficulty: 'easy' },
+      { question: 'Which command changes an existing table structure?', answer: 'ALTER TABLE', explanation: 'ALTER TABLE adds/modifies/drops columns and constraints.', subtopic: 'DDL', difficulty: 'easy' },
+      { question: 'Which command creates a new table definition?', answer: 'CREATE TABLE', explanation: 'CREATE TABLE defines schema, datatypes, and constraints.', subtopic: 'DDL', difficulty: 'easy' },
+      {
+        question: 'Which clause limits rows returned in Oracle 12c+ syntax?',
+        answer: 'Use FETCH FIRST n ROWS ONLY clause',
+        options: [
+          'Use FETCH FIRST n ROWS ONLY clause',
+          'Use LIMIT n OFFSET m clause',
+          'Use TOP n clause',
+          'Use ROWNUM <= n predicate',
+        ],
+        explanation: 'Oracle supports row limiting using FETCH FIRST/OFFSET syntax.',
+        subtopic: 'Result Shaping',
+        difficulty: 'medium',
+      },
+      {
+        question: 'Which expression is used to replace NULL with alternate value in Oracle SQL?',
+        answer: 'NVL()',
+        options: ['NVL()', 'ISNULL()', 'IFNULL()', 'DECODE()'],
+        explanation: 'NVL returns fallback when expression evaluates to NULL.',
+        subtopic: 'Null Handling',
+        difficulty: 'easy',
+      },
+    ],
+  },
+  {
+    setId: 14,
+    title: 'TCS PL/SQL Set 1 - PL/SQL Fundamentals',
+    description: 'Block structure, variables, datatypes, and executable section basics in PL/SQL.',
+    domain: 'PL/SQL',
+    topic: 'PL/SQL',
+    sourceType: 'official-docs',
+    sourceRef: [SOURCE_CATALOG.official[9], SOURCE_CATALOG.prepPattern[0]],
+    items: [
+      { question: 'Which keyword starts the executable section of a PL/SQL block?', answer: 'BEGIN', explanation: 'BEGIN marks start of executable statements in a block.', subtopic: 'Block Structure', difficulty: 'easy' },
+      { question: 'Which keyword ends a PL/SQL block?', answer: 'END', explanation: 'END terminates a PL/SQL block; often followed by semicolon.', subtopic: 'Block Structure', difficulty: 'easy' },
+      { question: 'Which optional section declares variables, cursors, and local types?', answer: 'DECLARE', explanation: 'DECLARE section is used before BEGIN in anonymous blocks.', subtopic: 'Block Structure', difficulty: 'easy' },
+      { question: 'Which section handles runtime errors in PL/SQL?', answer: 'EXCEPTION', explanation: 'EXCEPTION section traps and handles raised exceptions.', subtopic: 'Error Handling', difficulty: 'easy' },
+      { question: 'What symbol is used to assign values to variables in PL/SQL?', answer: ':=', explanation: 'PL/SQL assignment operator is :=, not equals sign.', subtopic: 'Syntax', difficulty: 'easy' },
+      { question: 'Which datatype stores variable-length character strings in PL/SQL?', answer: 'VARCHAR2', explanation: 'VARCHAR2 is standard variable-length string datatype.', subtopic: 'Datatypes', difficulty: 'easy' },
+      { question: 'Which datatype is specifically optimized for storing whole numbers in PL/SQL?', answer: 'PLS_INTEGER', options: ['PLS_INTEGER', 'NUMBER', 'VARCHAR2', 'DATE'], explanation: 'PLS_INTEGER is intended for integer arithmetic in PL/SQL, while NUMBER is a general numeric type.', subtopic: 'Datatypes', difficulty: 'easy' },
+      { question: 'Which datatype stores date and time values in Oracle?', answer: 'DATE', explanation: 'DATE includes date plus time up to seconds in Oracle.', subtopic: 'Datatypes', difficulty: 'easy' },
+      { question: 'Which built-in package procedure is used for debug output in SQL*Plus/SQL Developer?', answer: 'DBMS_OUTPUT.PUT_LINE', explanation: 'DBMS_OUTPUT.PUT_LINE prints text when server output is enabled.', subtopic: 'Output', difficulty: 'easy' },
+      { question: 'What is an anonymous PL/SQL block?', answer: 'A PL/SQL block without a stored name', options: ['A PL/SQL block without a stored name', 'A packaged procedure compiled in the data dictionary', 'A trigger that runs automatically on DML events', 'A cursor definition that returns multiple rows'], explanation: 'Anonymous blocks run directly and are not stored as schema objects.', subtopic: 'Block Structure', difficulty: 'easy' },
+      { question: 'Which attribute can copy datatype from a table column?', answer: '%TYPE', explanation: '%TYPE anchors variable datatype to table column definition.', subtopic: 'Anchored Types', difficulty: 'medium' },
+      { question: 'Which attribute can define a record matching an entire table row?', answer: '%ROWTYPE', explanation: '%ROWTYPE creates composite record matching row structure.', subtopic: 'Anchored Types', difficulty: 'medium' },
+      { question: 'Which statement exits current loop immediately?', answer: 'EXIT', explanation: 'EXIT stops loop execution and control moves after loop.', subtopic: 'Control Structures', difficulty: 'easy' },
+      { question: 'Which loop iterates a fixed numeric range in PL/SQL?', answer: 'FOR loop', explanation: 'FOR loop automatically handles counter initialization and increment.', subtopic: 'Control Structures', difficulty: 'easy' },
+      { question: 'Which loop checks condition before each iteration?', answer: 'WHILE loop', explanation: 'WHILE evaluates condition prior to entering each loop cycle.', subtopic: 'Control Structures', difficulty: 'easy' },
+      { question: 'Which conditional statement handles multi-way branching in PL/SQL?', answer: 'CASE', explanation: 'CASE selects among multiple alternatives clearly.', subtopic: 'Control Structures', difficulty: 'easy' },
+      { question: 'Which keyword creates constants that cannot be reassigned?', answer: 'CONSTANT', explanation: 'CONSTANT variables require initialization and stay immutable.', subtopic: 'Variables', difficulty: 'medium' },
+      { question: 'Which keyword can intentionally skip to next loop iteration in PL/SQL?', answer: 'CONTINUE', explanation: 'CONTINUE transfers control to next loop cycle.', subtopic: 'Control Structures', difficulty: 'medium' },
+      { question: 'Which query form fetches a single row directly into PL/SQL variables?', answer: 'SELECT INTO', options: ['SELECT INTO', 'SELECT DISTINCT only', 'DESCRIBE TABLE', 'EXPLAIN PLAN only'], explanation: 'SELECT INTO fetches single-row query results into PL/SQL variables.', subtopic: 'SQL in PL/SQL', difficulty: 'medium' },
+      { question: 'After DML inside PL/SQL, which command makes changes permanent?', answer: 'COMMIT', explanation: 'COMMIT finalizes transaction changes in the session.', subtopic: 'Transactions', difficulty: 'easy' },
+    ],
+  },
+  {
+    setId: 15,
+    title: 'TCS PL/SQL Set 2 - Cursors and Control Flow',
+    description: 'Implicit/explicit cursors, cursor attributes, loops, and conditional patterns.',
+    domain: 'PL/SQL',
+    topic: 'PL/SQL',
+    sourceType: 'official-docs',
+    sourceRef: [SOURCE_CATALOG.official[9], SOURCE_CATALOG.prepPattern[1]],
+    items: [
+      { question: 'Which cursor is created automatically by Oracle for DML and single-row SELECT INTO?', answer: 'Implicit cursor', explanation: 'Oracle manages implicit cursor lifecycle automatically.', subtopic: 'Cursors', difficulty: 'easy' },
+      { question: 'Which cursor is declared by developer for multi-row query processing?', answer: 'Explicit cursor', explanation: 'Explicit cursors are declared, opened, fetched, and closed manually or via loops.', subtopic: 'Cursors', difficulty: 'easy' },
+      { question: 'Which cursor attribute indicates whether last FETCH returned a row?', answer: '%FOUND', explanation: '%FOUND is true when latest fetch or DML affected at least one row.', subtopic: 'Cursor Attributes', difficulty: 'medium' },
+      { question: 'Which cursor attribute indicates whether last FETCH failed to return a row?', answer: '%NOTFOUND', explanation: '%NOTFOUND becomes true when no row is fetched.', subtopic: 'Cursor Attributes', difficulty: 'medium' },
+      { question: 'Which cursor attribute returns number of rows fetched/affected so far?', answer: '%ROWCOUNT', explanation: '%ROWCOUNT tracks processed row count for cursor or DML.', subtopic: 'Cursor Attributes', difficulty: 'easy' },
+      { question: 'Which cursor attribute indicates whether an explicit cursor is currently open?', answer: '%ISOPEN', explanation: '%ISOPEN helps avoid invalid close/open operations.', subtopic: 'Cursor Attributes', difficulty: 'easy' },
+      { question: 'Which statement opens an explicit cursor?', answer: 'OPEN', explanation: 'OPEN executes cursor query and establishes result set context.', subtopic: 'Cursors', difficulty: 'easy' },
+      { question: 'Which statement retrieves next row from an explicit cursor?', answer: 'FETCH', explanation: 'FETCH reads rows one-by-one into variables or records.', subtopic: 'Cursors', difficulty: 'easy' },
+      { question: 'Which statement releases an explicit cursor result set?', answer: 'CLOSE', explanation: 'CLOSE frees cursor resources after processing is complete.', subtopic: 'Cursors', difficulty: 'easy' },
+      { question: 'Which loop style automatically opens, fetches, and closes an explicit cursor?', answer: 'Cursor FOR loop', explanation: 'Cursor FOR loop abstracts cursor lifecycle operations.', subtopic: 'Cursors', difficulty: 'medium' },
+      { question: 'Which command skips current loop iteration and continues with next?', answer: 'CONTINUE', explanation: 'CONTINUE avoids remaining statements in current iteration.', subtopic: 'Control Flow', difficulty: 'easy' },
+      { question: 'Which command can label a loop for targeted EXIT/CONTINUE in nested loops?', answer: 'Loop label', explanation: 'Labels improve control in nested iterative structures.', subtopic: 'Control Flow', difficulty: 'medium' },
+      { question: 'Which conditional structure is best for two-way branching?', answer: 'IF...ELSE', explanation: 'IF...ELSE handles yes/no branching logic directly.', subtopic: 'Control Flow', difficulty: 'easy' },
+      { question: 'Which branch keyword adds additional condition checks in IF structure?', answer: 'ELSIF', explanation: 'ELSIF allows multiple mutually exclusive condition checks.', subtopic: 'Control Flow', difficulty: 'easy' },
+      { question: 'Which statement explicitly raises an exception by name?', answer: 'RAISE', explanation: 'RAISE triggers named user-defined or predefined exceptions.', subtopic: 'Exceptions', difficulty: 'medium' },
+      { question: 'Which predefined exception is raised when SELECT INTO returns no rows?', answer: 'NO_DATA_FOUND', explanation: 'NO_DATA_FOUND occurs when single-row fetch has zero matches.', subtopic: 'Exceptions', difficulty: 'easy' },
+      { question: 'Which predefined exception is raised when SELECT INTO returns multiple rows?', answer: 'TOO_MANY_ROWS', explanation: 'TOO_MANY_ROWS indicates single-row fetch expected but many returned.', subtopic: 'Exceptions', difficulty: 'easy' },
+      { question: 'Which predefined exception is raised for division by zero?', answer: 'ZERO_DIVIDE', explanation: 'ZERO_DIVIDE is thrown when denominator evaluates to zero.', subtopic: 'Exceptions', difficulty: 'easy' },
+      { question: 'Which keyword catches all unhandled exceptions in an EXCEPTION block?', answer: 'WHEN OTHERS', explanation: 'WHEN OTHERS is generic fallback handler for remaining errors.', subtopic: 'Exceptions', difficulty: 'medium' },
+      { question: 'Which command undoes uncommitted changes in current transaction?', answer: 'ROLLBACK', explanation: 'ROLLBACK reverts pending transaction changes.', subtopic: 'Transactions', difficulty: 'easy' },
+    ],
+  },
+  {
+    setId: 16,
+    title: 'TCS PL/SQL Set 3 - Procedures, Functions, and Packages',
+    description: 'Reusable program units, parameters, exceptions, and package-level organization in PL/SQL.',
+    domain: 'PL/SQL',
+    topic: 'PL/SQL',
+    sourceType: 'official-docs',
+    sourceRef: [SOURCE_CATALOG.official[9], SOURCE_CATALOG.prepPattern[0]],
+    items: [
+      { question: 'Which statement creates a stored procedure in Oracle?', answer: 'CREATE PROCEDURE', explanation: 'CREATE PROCEDURE defines a named executable unit stored in schema.', subtopic: 'Program Units', difficulty: 'easy' },
+      { question: 'Which statement creates a stored function in Oracle?', answer: 'CREATE FUNCTION', explanation: 'CREATE FUNCTION defines a named unit that returns a value.', subtopic: 'Program Units', difficulty: 'easy' },
+      { question: 'What is the key difference between procedure and function?', answer: 'A function must return a value, a procedure need not', options: ['A function must return a value, a procedure need not', 'A procedure can return only BOOLEAN, a function cannot return values', 'A function cannot accept parameters, a procedure must accept one', 'A procedure must be inside a package, a function cannot be packaged'], explanation: 'Functions return values usable in expressions; procedures may not return a value.', subtopic: 'Program Units', difficulty: 'easy' },
+      { question: 'Which parameter mode allows passing value into a subprogram only?', answer: 'IN', explanation: 'IN parameters are read-only inputs within subprogram body.', subtopic: 'Parameters', difficulty: 'easy' },
+      { question: 'Which parameter mode is used to return value to caller?', answer: 'OUT', explanation: 'OUT parameters send data back from subprogram to caller.', subtopic: 'Parameters', difficulty: 'easy' },
+      { question: 'Which parameter mode supports both input and output behavior?', answer: 'IN OUT', explanation: 'IN OUT parameters can be read and modified by subprogram.', subtopic: 'Parameters', difficulty: 'easy' },
+      { question: 'Which keyword enables default values for parameters?', answer: 'DEFAULT', explanation: 'DEFAULT allows omitting optional argument values at call time.', subtopic: 'Parameters', difficulty: 'medium' },
+      { question: 'Which SQL*Plus/SQL Developer command invokes a stored procedure directly?', answer: 'EXECUTE', options: ['CALL', 'EXECUTE', 'CREATE PROCEDURE', 'DECLARE'], explanation: 'EXECUTE (or EXEC) is a client command used to run a stored procedure directly.', subtopic: 'Invocation', difficulty: 'medium' },
+      { question: 'Which section defines public declarations of a package?', answer: 'Package specification', explanation: 'Package spec exposes public subprogram signatures and objects.', subtopic: 'Packages', difficulty: 'medium' },
+      { question: 'Which section contains implementation for package declarations?', answer: 'Package body', explanation: 'Package body implements logic and can include private members.', subtopic: 'Packages', difficulty: 'medium' },
+      { question: 'Which package feature allows hiding helper routines from outside callers?', answer: 'Private members in package body', options: ['Public declarations in package specification', 'Private members in package body', 'Synonyms created for the package', 'Granting EXECUTE to PUBLIC'], explanation: 'Members declared only in package body remain private to package implementation.', subtopic: 'Packages', difficulty: 'medium' },
+      { question: 'Which statement modifies existing procedure/function definition?', answer: 'CREATE OR REPLACE', explanation: 'CREATE OR REPLACE recompiles object while preserving grants in many cases.', subtopic: 'Program Units', difficulty: 'easy' },
+      { question: 'Which data structure stores multiple elements indexed by integer or string in PL/SQL?', answer: 'Associative array', explanation: 'Associative arrays are key-value PL/SQL collections.', subtopic: 'Collections', difficulty: 'medium' },
+      { question: 'Which collection type has no upper bound and can be extended dynamically?', answer: 'Nested table', explanation: 'Nested tables are unbounded collections usable in PL/SQL and SQL contexts.', subtopic: 'Collections', difficulty: 'medium' },
+      { question: 'Which collection type has fixed maximum size and dense indexing?', answer: 'VARRAY', explanation: 'VARRAY has bounded size and preserves element ordering.', subtopic: 'Collections', difficulty: 'medium' },
+      { question: 'Which keyword defines a user-declared exception name?', answer: 'EXCEPTION', explanation: 'User-defined exceptions are declared in declaration section using EXCEPTION.', subtopic: 'Exceptions', difficulty: 'medium' },
+      { question: 'Which utility reports error message text for current exception?', answer: 'SQLERRM', explanation: 'SQLERRM returns error message associated with current error code.', subtopic: 'Exceptions', difficulty: 'medium' },
+      { question: 'Which utility reports Oracle error code number for current exception?', answer: 'SQLCODE', explanation: 'SQLCODE returns numeric code for most recent exception.', subtopic: 'Exceptions', difficulty: 'medium' },
+      { question: 'Which feature allows one procedure/function to call itself?', answer: 'Recursion', explanation: 'Recursive subprograms call themselves until termination condition.', subtopic: 'Program Units', difficulty: 'medium' },
+      { question: 'Which clause can mark a function as deterministic for same-input same-output assumption?', answer: 'DETERMINISTIC', explanation: 'DETERMINISTIC hints that function returns same result for identical inputs.', subtopic: 'Functions', difficulty: 'hard' },
+    ],
+  },
 ]
 
+
 const assembledSets = setDefinitions.map((definition) => buildSet(definition))
+
 
 const rawCandidates = {
   metadata: {
     title: 'TCS UI MCQ Raw Candidates',
     generatedAt: new Date().toISOString(),
     policy: 'rephrased_only',
-    targetExamContext: 'TCS Ninja / TCS iON style HTML-CSS-JS assessments',
+    targetExamContext: 'TCS Ninja / TCS iON style Web/UI, SQL, and PL/SQL assessments',
     sourceCatalog: SOURCE_CATALOG,
     notes: [
       'Questions are rewritten and normalized from standards + prep-pattern sources.',
@@ -565,8 +926,10 @@ const rawCandidates = {
 const validateAndFinalize = (raw) => {
   const errors = []
 
-  if (raw.sets.length !== 10) {
-    errors.push(`Expected 10 sets, found ${raw.sets.length}`)
+  const expectedSetCount = setDefinitions.length
+
+  if (raw.sets.length !== expectedSetCount) {
+    errors.push(`Expected ${expectedSetCount} sets, found ${raw.sets.length}`)
   }
 
   const questionTextSet = new Set()

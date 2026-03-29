@@ -17,6 +17,7 @@ const SetCard = ({ setData, latestAttempt, onStartFull, onStartWrongOnly }) => {
 
       <div className="set-meta">
         <span>{setData.questions.length} questions</span>
+        <span>{setData.domain ?? 'Web/UI'}</span>
         <span>{setData.topic}</span>
       </div>
 

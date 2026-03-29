@@ -43,7 +43,7 @@ const QuizRunner = ({
     <section className="quiz-panel fade-in">
       <header className="quiz-header">
         <div>
-          <p className="set-tag">Set {setData.setId}</p>
+          <p className="set-tag">{setData.domain ?? 'Web/UI'} • Set {setData.setId}</p>
           <h2>{setData.title}</h2>
           <p className="meta-line">
             Mode: {attempt.mode === 'wrong-only' ? 'Wrong Only' : 'Full Set'}

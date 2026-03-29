@@ -1,9 +1,9 @@
 {
   "metadata": {
     "title": "TCS UI MCQ Raw Candidates",
-    "generatedAt": "2026-03-29T18:31:21.155Z",
+    "generatedAt": "2026-03-29T19:30:24.596Z",
     "policy": "rephrased_only",
-    "targetExamContext": "TCS Ninja / TCS iON style HTML-CSS-JS assessments",
+    "targetExamContext": "TCS Ninja / TCS iON style Web/UI, SQL, and PL/SQL assessments",
     "sourceCatalog": {
       "official": [
         "https://www.tcsion.com/hub/national-qualifier-test/",
@@ -13,7 +13,9 @@
         "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
         "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
         "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
-        "https://owasp.org/www-community/attacks/xss/"
+        "https://owasp.org/www-community/attacks/xss/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/"
       ],
       "prepPattern": [
         "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/",
@@ -35,6 +37,7 @@
       "setId": 1,
       "title": "TCS UI Set 1 - HTML Foundations",
       "description": "Core HTML structure, semantics, and essential tags frequently seen in entry-level UI MCQs.",
+      "domain": "Web/UI",
       "topic": "HTML",
       "questions": [
         {
@@ -644,6 +647,7 @@
       "setId": 2,
       "title": "TCS UI Set 2 - Forms & Validation",
       "description": "Form controls, attributes, and validation patterns aligned to common proctored UI MCQ style.",
+      "domain": "Web/UI",
       "topic": "HTML",
       "questions": [
         {
@@ -1273,6 +1277,7 @@
       "setId": 3,
       "title": "TCS UI Set 3 - CSS Core Concepts",
       "description": "Selectors, box model, units, and positioning fundamentals for high-accuracy CSS rounds.",
+      "domain": "Web/UI",
       "topic": "CSS",
       "questions": [
         {
@@ -1862,6 +1867,7 @@
       "setId": 4,
       "title": "TCS UI Set 4 - Layout & Responsive Design",
       "description": "Flexbox, Grid, media queries, and responsive behavior in practical UI implementation.",
+      "domain": "Web/UI",
       "topic": "CSS",
       "questions": [
         {
@@ -2471,6 +2477,7 @@
       "setId": 5,
       "title": "TCS UI Set 5 - JavaScript Fundamentals",
       "description": "Core JavaScript behavior, type system, operators, and control flow essentials.",
+      "domain": "Web/UI",
       "topic": "JavaScript",
       "questions": [
         {
@@ -3060,6 +3067,7 @@
       "setId": 6,
       "title": "TCS UI Set 6 - Functions, Arrays, and Objects",
       "description": "Higher-order methods, object handling, and frequently tested JavaScript utility patterns.",
+      "domain": "Web/UI",
       "topic": "JavaScript",
       "questions": [
         {
@@ -3649,6 +3657,7 @@
       "setId": 7,
       "title": "TCS UI Set 7 - DOM & Events",
       "description": "Document manipulation and event model behavior often tested in practical JavaScript rounds.",
+      "domain": "Web/UI",
       "topic": "JavaScript",
       "questions": [
         {
@@ -4238,6 +4247,7 @@
       "setId": 8,
       "title": "TCS UI Set 8 - Browser APIs & Async JS",
       "description": "Storage, fetch, promises, async/await, and browser utility APIs for real app scenarios.",
+      "domain": "Web/UI",
       "topic": "JavaScript",
       "questions": [
         {
@@ -4867,6 +4877,7 @@
       "setId": 9,
       "title": "TCS UI Set 9 - Mixed Output & Logic",
       "description": "Output-focused MCQs in the style of placement/proctored rounds with deterministic answers.",
+      "domain": "Web/UI",
       "topic": "Mixed",
       "questions": [
         {
@@ -5496,6 +5507,7 @@
       "setId": 10,
       "title": "TCS UI Set 10 - Web Best Practices",
       "description": "Security, performance, and accessibility concepts useful in practical UI interviews and assessments.",
+      "domain": "Web/UI",
       "topic": "BestPractices",
       "questions": [
         {
@@ -5506,10 +5518,10 @@
           "difficulty": "easy",
           "question": "What is the main benefit of using HTTPS instead of HTTP?",
           "options": [
-            "Execution of unauthorized scripts and injected content",
-            "Escape or sanitize untrusted input before insertion.",
+            "It is used to control layout behavior.",
+            "It improves accessibility and semantics.",
             "It encrypts data in transit between client and server.",
-            "To prevent reverse-tabnabbing and isolate window context"
+            "It helps validate user input correctly."
           ],
           "answerIndex": 2,
           "explanation": "HTTPS protects confidentiality and integrity during network transfer.",
@@ -5537,10 +5549,10 @@
           "difficulty": "medium",
           "question": "What is a primary frontend defense against XSS when rendering user data?",
           "options": [
-            "It encrypts data in transit between client and server.",
+            "It improves accessibility and semantics.",
             "Escape or sanitize untrusted input before insertion.",
-            "To prevent reverse-tabnabbing and isolate window context",
-            "Execution of unauthorized scripts and injected content"
+            "It helps validate user input correctly.",
+            "It is used to control layout behavior."
           ],
           "answerIndex": 1,
           "explanation": "Untrusted HTML/JS must never be injected unsafely.",
@@ -5569,9 +5581,9 @@
           "question": "What does a Content Security Policy (CSP) help mitigate?",
           "options": [
             "Execution of unauthorized scripts and injected content",
-            "Escape or sanitize untrusted input before insertion.",
-            "To prevent reverse-tabnabbing and isolate window context",
-            "It encrypts data in transit between client and server."
+            "It is used to control layout behavior.",
+            "It helps validate user input correctly.",
+            "It improves accessibility and semantics."
           ],
           "answerIndex": 0,
           "explanation": "CSP restricts trusted resource origins and script behavior.",
@@ -5599,9 +5611,9 @@
           "difficulty": "medium",
           "question": "Why add rel=\"noopener noreferrer\" to target=\"_blank\" links?",
           "options": [
-            "It encrypts data in transit between client and server.",
-            "Escape or sanitize untrusted input before insertion.",
-            "Execution of unauthorized scripts and injected content",
+            "It improves accessibility and semantics.",
+            "It is used to control layout behavior.",
+            "It helps validate user input correctly.",
             "To prevent reverse-tabnabbing and isolate window context"
           ],
           "answerIndex": 3,
@@ -5631,9 +5643,9 @@
           "question": "Why use semantic HTML elements instead of generic divs everywhere?",
           "options": [
             "They improve accessibility and document meaning.",
-            "A concise description of the image meaning/function",
-            "Every control should have an associated label.",
-            "It encrypts data in transit between client and server."
+            "It improves accessibility and semantics.",
+            "It is used to control layout behavior.",
+            "It helps validate user input correctly."
           ],
           "answerIndex": 0,
           "explanation": "Semantic structure helps screen readers and maintainability.",
@@ -5661,10 +5673,10 @@
           "difficulty": "easy",
           "question": "For informative images, what should alt text provide?",
           "options": [
-            "It encrypts data in transit between client and server.",
+            "It helps validate user input correctly.",
             "A concise description of the image meaning/function",
-            "They improve accessibility and document meaning.",
-            "Every control should have an associated label."
+            "It improves accessibility and semantics.",
+            "It is used to control layout behavior."
           ],
           "answerIndex": 1,
           "explanation": "Alt should communicate useful content, not file names.",
@@ -5692,10 +5704,10 @@
           "difficulty": "easy",
           "question": "What is a key accessibility rule for form controls?",
           "options": [
-            "A concise description of the image meaning/function",
-            "It encrypts data in transit between client and server.",
+            "It is used to control layout behavior.",
+            "It helps validate user input correctly.",
             "Every control should have an associated label.",
-            "They improve accessibility and document meaning."
+            "It improves accessibility and semantics."
           ],
           "answerIndex": 2,
           "explanation": "Labels improve usability for all users and assistive tech.",
@@ -5723,9 +5735,9 @@
           "difficulty": "medium",
           "question": "Which ARIA feature helps announce dynamic updates to assistive tech?",
           "options": [
-            "loading=\"lazy\"",
-            "Throttling",
-            "Debouncing",
+            "aria-hidden",
+            "aria-label",
+            "role=\"presentation\"",
             "aria-live"
           ],
           "answerIndex": 3,
@@ -5755,9 +5767,9 @@
           "question": "How can you reduce initial network payload size for faster load?",
           "options": [
             "Minify and compress assets",
-            "It delays script execution until after HTML parsing.",
-            "External files improve caching and policy control.",
-            "It encrypts data in transit between client and server."
+            "It improves accessibility and semantics.",
+            "It is used to control layout behavior.",
+            "It helps validate user input correctly."
           ],
           "answerIndex": 0,
           "explanation": "Minification and compression reduce transfer bytes.",
@@ -5785,10 +5797,10 @@
           "difficulty": "easy",
           "question": "Which image attribute defers offscreen image loading?",
           "options": [
-            "Throttling",
-            "aria-live",
+            "Memoization",
+            "Batching",
             "loading=\"lazy\"",
-            "Debouncing"
+            "IntersectionObserver"
           ],
           "answerIndex": 2,
           "explanation": "Lazy loading postpones non-critical image fetches.",
@@ -5816,9 +5828,9 @@
           "difficulty": "medium",
           "question": "How does using defer on script tags help page rendering?",
           "options": [
-            "Minify and compress assets",
-            "It encrypts data in transit between client and server.",
-            "External files improve caching and policy control.",
+            "It improves accessibility and semantics.",
+            "It helps validate user input correctly.",
+            "It is used to control layout behavior.",
             "It delays script execution until after HTML parsing."
           ],
           "answerIndex": 3,
@@ -5848,9 +5860,9 @@
           "question": "Why avoid large inline scripts/styles in production pages?",
           "options": [
             "External files improve caching and policy control.",
-            "It delays script execution until after HTML parsing.",
-            "Minify and compress assets",
-            "It encrypts data in transit between client and server."
+            "It is used to control layout behavior.",
+            "It improves accessibility and semantics.",
+            "It helps validate user input correctly."
           ],
           "answerIndex": 0,
           "explanation": "External assets are cacheable and easier to secure/manage.",
@@ -5878,10 +5890,10 @@
           "difficulty": "medium",
           "question": "Which browser API is preferred for smooth animation loops?",
           "options": [
-            "map",
-            "reduce",
+            "setTimeout()",
+            "queueMicrotask()",
             "requestAnimationFrame()",
-            "filter"
+            "setInterval()"
           ],
           "answerIndex": 2,
           "explanation": "requestAnimationFrame syncs with repaint cycles for efficiency.",
@@ -5910,9 +5922,9 @@
           "question": "Which technique limits rapid function calls until user stops typing?",
           "options": [
             "Debouncing",
-            "aria-live",
-            "Throttling",
-            "loading=\"lazy\""
+            "Batching",
+            "Memoization",
+            "IntersectionObserver"
           ],
           "answerIndex": 0,
           "explanation": "Debounce delays execution until activity settles.",
@@ -5940,9 +5952,9 @@
           "difficulty": "medium",
           "question": "Which technique guarantees execution at most once per interval during frequent events?",
           "options": [
-            "Debouncing",
-            "aria-live",
-            "loading=\"lazy\"",
+            "Memoization",
+            "Batching",
+            "IntersectionObserver",
             "Throttling"
           ],
           "answerIndex": 3,
@@ -5971,10 +5983,10 @@
           "difficulty": "medium",
           "question": "What is a common advantage of service workers in web apps?",
           "options": [
-            "Escape or sanitize untrusted input before insertion.",
-            "It encrypts data in transit between client and server.",
+            "Automatic SQL database encryption in browser",
+            "Direct DOM access from background threads",
             "Offline caching and network interception capabilities",
-            "Execution of unauthorized scripts and injected content"
+            "Guaranteed real-time server connectivity"
           ],
           "answerIndex": 2,
           "explanation": "Service workers can cache assets and serve offline experiences.",
@@ -6002,10 +6014,10 @@
           "difficulty": "medium",
           "question": "Where is it generally safer to keep highly sensitive session tokens?",
           "options": [
-            "It encrypts data in transit between client and server.",
+            "It improves accessibility and semantics.",
             "HttpOnly secure cookies managed by the server",
-            "Execution of unauthorized scripts and injected content",
-            "Escape or sanitize untrusted input before insertion."
+            "It helps validate user input correctly.",
+            "It is used to control layout behavior."
           ],
           "answerIndex": 1,
           "explanation": "HttpOnly cookies are not readable by JavaScript, reducing XSS exposure.",
@@ -6034,9 +6046,9 @@
           "question": "What does the same-origin policy primarily restrict?",
           "options": [
             "Cross-origin read access to protected resources",
-            "Escape or sanitize untrusted input before insertion.",
-            "Execution of unauthorized scripts and injected content",
-            "It encrypts data in transit between client and server."
+            "It is used to control layout behavior.",
+            "It helps validate user input correctly.",
+            "It improves accessibility and semantics."
           ],
           "answerIndex": 0,
           "explanation": "SOP prevents arbitrary reading across different origins.",
@@ -6064,9 +6076,9 @@
           "difficulty": "medium",
           "question": "Which response header controls allowed cross-origin request origins?",
           "options": [
-            "aria-live",
-            "loading=\"lazy\"",
-            "Debouncing",
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "Strict-Transport-Security",
             "Access-Control-Allow-Origin"
           ],
           "answerIndex": 3,
@@ -6095,10 +6107,10 @@
           "difficulty": "easy",
           "question": "Which approach helps maintain positive UX during async operations?",
           "options": [
-            "Execution of unauthorized scripts and injected content",
+            "Retry indefinitely without user messaging",
             "Show clear loading and success/error feedback states",
-            "It encrypts data in transit between client and server.",
-            "Escape or sanitize untrusted input before insertion."
+            "Hide all progress indicators until completion",
+            "Block the entire UI for every request"
           ],
           "answerIndex": 1,
           "explanation": "Feedback reduces user confusion and improves trust.",
@@ -6107,6 +6119,3666 @@
             "https://owasp.org/www-community/attacks/xss/",
             "https://developer.mozilla.org/en-US/docs/Web/CSS",
             "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        }
+      ]
+    },
+    {
+      "id": "set-11",
+      "setId": 11,
+      "title": "TCS SQL Set 1 - SQL Fundamentals",
+      "description": "Core SQL statements, filtering, sorting, and DML basics aligned to placement-style MCQs.",
+      "domain": "SQL",
+      "topic": "SQL",
+      "questions": [
+        {
+          "id": "S11Q01",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Core Commands",
+          "difficulty": "easy",
+          "question": "Which SQL statement is used to read data from a table?",
+          "options": [
+            "ORDER BY",
+            "INSERT",
+            "WHERE",
+            "SELECT"
+          ],
+          "answerIndex": 3,
+          "explanation": "SELECT retrieves rows and columns from database objects.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q02",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Filtering",
+          "difficulty": "easy",
+          "question": "Which clause filters rows before grouping or final output?",
+          "options": [
+            "%",
+            "LIKE",
+            "WHERE",
+            "_"
+          ],
+          "answerIndex": 2,
+          "explanation": "WHERE applies row-level filtering before GROUP BY processing.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q03",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Sorting",
+          "difficulty": "easy",
+          "question": "Which clause sorts query output rows?",
+          "options": [
+            "SELECT",
+            "ORDER BY",
+            "INSERT",
+            "WHERE"
+          ],
+          "answerIndex": 1,
+          "explanation": "ORDER BY arranges result rows by one or more expressions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q04",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "DML",
+          "difficulty": "easy",
+          "question": "Which statement inserts new rows into a table?",
+          "options": [
+            "INSERT",
+            "DELETE",
+            "SELECT",
+            "UPDATE"
+          ],
+          "answerIndex": 0,
+          "explanation": "INSERT adds new records into a target table.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q05",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "DML",
+          "difficulty": "easy",
+          "question": "Which statement modifies existing rows in a table?",
+          "options": [
+            "INSERT",
+            "DELETE",
+            "SELECT",
+            "UPDATE"
+          ],
+          "answerIndex": 3,
+          "explanation": "UPDATE changes values of existing rows that match conditions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q06",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "DML",
+          "difficulty": "easy",
+          "question": "Which statement removes rows from a table (with optional condition)?",
+          "options": [
+            "DELETE",
+            "INSERT",
+            "UPDATE",
+            "SELECT"
+          ],
+          "answerIndex": 0,
+          "explanation": "DELETE removes selected rows and can be restricted using WHERE.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q07",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Filtering",
+          "difficulty": "easy",
+          "question": "Which operator is used to match a value against a pattern in SQL?",
+          "options": [
+            "WHERE",
+            "LIKE",
+            "_",
+            "%"
+          ],
+          "answerIndex": 1,
+          "explanation": "LIKE supports pattern matching with wildcard characters.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q08",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Filtering",
+          "difficulty": "easy",
+          "question": "In SQL LIKE patterns, which wildcard matches any sequence of characters?",
+          "options": [
+            "%",
+            "LIKE",
+            "_",
+            "WHERE"
+          ],
+          "answerIndex": 0,
+          "explanation": "Percent (%) in LIKE patterns matches zero or more characters.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q09",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Filtering",
+          "difficulty": "easy",
+          "question": "In SQL LIKE patterns, which wildcard matches exactly one character?",
+          "options": [
+            "WHERE",
+            "LIKE",
+            "%",
+            "_"
+          ],
+          "answerIndex": 3,
+          "explanation": "Underscore (_) matches a single character in LIKE.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q10",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Filtering",
+          "difficulty": "easy",
+          "question": "Which predicate checks whether a value exists inside a provided list?",
+          "options": [
+            "%",
+            "IN",
+            "WHERE",
+            "LIKE"
+          ],
+          "answerIndex": 1,
+          "explanation": "IN simplifies multiple OR equality checks.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q11",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Filtering",
+          "difficulty": "easy",
+          "question": "Which predicate checks whether a value falls within a range inclusive?",
+          "options": [
+            "LIKE",
+            "%",
+            "BETWEEN",
+            "WHERE"
+          ],
+          "answerIndex": 2,
+          "explanation": "BETWEEN checks lower and upper bounds inclusively.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q12",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Null Handling",
+          "difficulty": "easy",
+          "question": "Which predicate checks for missing/unknown values in SQL?",
+          "options": [
+            "SELECT",
+            "ORDER BY",
+            "WHERE",
+            "IS NULL"
+          ],
+          "answerIndex": 3,
+          "explanation": "NULL comparisons require IS NULL instead of equals operator.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q13",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Conditions",
+          "difficulty": "easy",
+          "question": "Which operator combines two conditions where both must be true?",
+          "options": [
+            "AND",
+            "NOT",
+            "OR",
+            "SELECT"
+          ],
+          "answerIndex": 0,
+          "explanation": "AND returns true only when both boolean conditions are true.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q14",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Conditions",
+          "difficulty": "easy",
+          "question": "Which operator combines conditions where at least one must be true?",
+          "options": [
+            "AND",
+            "SELECT",
+            "OR",
+            "NOT"
+          ],
+          "answerIndex": 2,
+          "explanation": "OR returns true when any condition in the expression is true.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q15",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Conditions",
+          "difficulty": "easy",
+          "question": "Which operator negates a condition in SQL?",
+          "options": [
+            "NOT",
+            "SELECT",
+            "OR",
+            "AND"
+          ],
+          "answerIndex": 0,
+          "explanation": "NOT flips a boolean expression from true to false or vice versa.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q16",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Functions",
+          "difficulty": "easy",
+          "question": "Which function returns the number of rows in a result set?",
+          "options": [
+            "MIN()",
+            "AVG()",
+            "MAX()",
+            "COUNT()"
+          ],
+          "answerIndex": 3,
+          "explanation": "COUNT returns row counts; COUNT(*) includes NULL rows too.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q17",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Functions",
+          "difficulty": "easy",
+          "question": "Which function returns the highest value in a numeric column?",
+          "options": [
+            "MIN()",
+            "COUNT()",
+            "MAX()",
+            "AVG()"
+          ],
+          "answerIndex": 2,
+          "explanation": "MAX computes the largest value from selected rows.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q18",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Functions",
+          "difficulty": "easy",
+          "question": "Which function returns the smallest value in a numeric column?",
+          "options": [
+            "COUNT()",
+            "MIN()",
+            "AVG()",
+            "MAX()"
+          ],
+          "answerIndex": 1,
+          "explanation": "MIN computes the smallest value from selected rows.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q19",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Functions",
+          "difficulty": "easy",
+          "question": "Which function returns the arithmetic mean of numeric values?",
+          "options": [
+            "AVG()",
+            "MIN()",
+            "MAX()",
+            "COUNT()"
+          ],
+          "answerIndex": 0,
+          "explanation": "AVG calculates average from non-null numeric values.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S11Q20",
+          "setId": 11,
+          "topic": "SQL",
+          "subtopic": "Functions",
+          "difficulty": "easy",
+          "question": "Which function returns the total sum of numeric values?",
+          "options": [
+            "MAX()",
+            "COUNT()",
+            "SUM()",
+            "MIN()"
+          ],
+          "answerIndex": 2,
+          "explanation": "SUM aggregates numeric values across selected rows.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        }
+      ]
+    },
+    {
+      "id": "set-12",
+      "setId": 12,
+      "title": "TCS SQL Set 2 - Joins & Set Operations",
+      "description": "Join behavior, set operators, aliases, and practical result-combination concepts.",
+      "domain": "SQL",
+      "topic": "SQL",
+      "questions": [
+        {
+          "id": "S12Q01",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "Which join returns rows with matching keys in both joined tables?",
+          "options": [
+            "INNER JOIN",
+            "FULL OUTER JOIN",
+            "RIGHT JOIN",
+            "LEFT JOIN"
+          ],
+          "answerIndex": 0,
+          "explanation": "INNER JOIN includes only rows satisfying the join condition.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q02",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "Which join returns all rows from left table and matching rows from right table?",
+          "options": [
+            "RIGHT JOIN",
+            "FULL OUTER JOIN",
+            "INNER JOIN",
+            "LEFT JOIN"
+          ],
+          "answerIndex": 3,
+          "explanation": "LEFT JOIN preserves all left-side rows and fills unmatched right columns with NULL.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q03",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "Which join returns all rows from right table and matching rows from left table?",
+          "options": [
+            "LEFT JOIN",
+            "INNER JOIN",
+            "RIGHT JOIN",
+            "FULL OUTER JOIN"
+          ],
+          "answerIndex": 2,
+          "explanation": "RIGHT JOIN preserves all right-side rows and null-fills missing left matches.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q04",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "medium",
+          "question": "Which join returns all rows when there is a match in either table?",
+          "options": [
+            "INNER JOIN",
+            "FULL OUTER JOIN",
+            "RIGHT JOIN",
+            "LEFT JOIN"
+          ],
+          "answerIndex": 1,
+          "explanation": "FULL OUTER JOIN combines left and right preservation behavior.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q05",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "Which join pairs each row from one table with every row from another table?",
+          "options": [
+            "CROSS JOIN",
+            "RIGHT JOIN",
+            "LEFT JOIN",
+            "INNER JOIN"
+          ],
+          "answerIndex": 0,
+          "explanation": "CROSS JOIN creates Cartesian product across both inputs.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q06",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "medium",
+          "question": "What is a self join?",
+          "options": [
+            "A table joined to itself using aliases",
+            "A join that keeps only matching rows",
+            "A join returning all rows from left table",
+            "A set operator that removes duplicates"
+          ],
+          "answerIndex": 0,
+          "explanation": "Self joins compare rows within the same table instance.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q07",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Aliases",
+          "difficulty": "easy",
+          "question": "Which keyword renames columns or tables temporarily in a query?",
+          "options": [
+            "LEFT JOIN",
+            "INNER JOIN",
+            "AS",
+            "RIGHT JOIN"
+          ],
+          "answerIndex": 2,
+          "explanation": "AS creates readable aliases for columns or table references.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q08",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Set Operators",
+          "difficulty": "easy",
+          "question": "Which set operator returns distinct rows from both queries?",
+          "options": [
+            "UNION ALL",
+            "UNION",
+            "MINUS",
+            "INTERSECT"
+          ],
+          "answerIndex": 1,
+          "explanation": "UNION removes duplicates while combining compatible result sets.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q09",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Set Operators",
+          "difficulty": "easy",
+          "question": "Which set operator returns all rows from both queries including duplicates?",
+          "options": [
+            "UNION ALL",
+            "INTERSECT",
+            "MINUS",
+            "UNION"
+          ],
+          "answerIndex": 0,
+          "explanation": "UNION ALL keeps duplicate rows and avoids duplicate elimination overhead.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q10",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Set Operators",
+          "difficulty": "medium",
+          "question": "Which set operator returns common rows between two query results?",
+          "options": [
+            "INTERSECT",
+            "UNION",
+            "UNION ALL",
+            "MINUS"
+          ],
+          "answerIndex": 0,
+          "explanation": "INTERSECT keeps rows present in both result sets.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q11",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Set Operators",
+          "difficulty": "medium",
+          "question": "Which set operator returns rows from first query that are absent in second?",
+          "options": [
+            "INTERSECT",
+            "MINUS",
+            "UNION",
+            "UNION ALL"
+          ],
+          "answerIndex": 1,
+          "explanation": "In Oracle, MINUS performs set difference (first minus second).",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q12",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "Which clause defines how two tables are related in a JOIN?",
+          "options": [
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "ON",
+            "INNER JOIN"
+          ],
+          "answerIndex": 2,
+          "explanation": "ON provides join-condition logic for matching rows.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q13",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "medium",
+          "question": "Which SQL construct is preferred over old comma joins for clarity?",
+          "options": [
+            "INNER JOIN",
+            "RIGHT JOIN",
+            "LEFT JOIN",
+            "Explicit JOIN syntax"
+          ],
+          "answerIndex": 3,
+          "explanation": "Explicit JOIN ... ON is clearer and less error-prone than comma joins.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q14",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "When no join condition is provided between two tables, what results?",
+          "options": [
+            "Cartesian product",
+            "LEFT JOIN",
+            "INNER JOIN",
+            "RIGHT JOIN"
+          ],
+          "answerIndex": 0,
+          "explanation": "Without join criteria, every row pairs with every row.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q15",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "In a LEFT JOIN, unmatched rows from right table are filled with what?",
+          "options": [
+            "INNER JOIN",
+            "RIGHT JOIN",
+            "NULL values",
+            "LEFT JOIN"
+          ],
+          "answerIndex": 2,
+          "explanation": "Missing right-table matches are represented as NULL in output columns.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q16",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "medium",
+          "question": "Which join is commonly used to find unmatched rows by checking right key IS NULL?",
+          "options": [
+            "LEFT JOIN with IS NULL filter",
+            "FULL OUTER JOIN with ON 1=1",
+            "CROSS JOIN with DISTINCT",
+            "RIGHT JOIN with GROUP BY"
+          ],
+          "answerIndex": 0,
+          "explanation": "Left-anti pattern uses LEFT JOIN and IS NULL to detect non-matches.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q17",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Set Operators",
+          "difficulty": "medium",
+          "question": "What must be true for set operators like UNION and INTERSECT?",
+          "options": [
+            "Queries must return same number of columns with compatible types",
+            "Both queries must reference the same table names",
+            "Each query must include ORDER BY before UNION",
+            "All selected columns must be numeric only"
+          ],
+          "answerIndex": 0,
+          "explanation": "Set operators require structurally compatible select lists.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q18",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Set Operators",
+          "difficulty": "medium",
+          "question": "Which clause can still sort results after using UNION?",
+          "options": [
+            "Final ORDER BY",
+            "UNION ALL",
+            "UNION",
+            "INTERSECT"
+          ],
+          "answerIndex": 0,
+          "explanation": "ORDER BY is applied once on the combined final result set.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q19",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Joins",
+          "difficulty": "easy",
+          "question": "Which join keeps only matching rows and excludes all unmatched rows?",
+          "options": [
+            "LEFT JOIN",
+            "FULL OUTER JOIN",
+            "INNER JOIN",
+            "RIGHT JOIN"
+          ],
+          "answerIndex": 2,
+          "explanation": "Only rows satisfying the ON condition are returned.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S12Q20",
+          "setId": 12,
+          "topic": "SQL",
+          "subtopic": "Aliases",
+          "difficulty": "easy",
+          "question": "In SQL, why are table aliases useful in multi-table joins?",
+          "options": [
+            "They make column references shorter and less ambiguous",
+            "They automatically index joined columns",
+            "They enforce foreign key constraints",
+            "They convert OUTER JOIN to INNER JOIN"
+          ],
+          "answerIndex": 0,
+          "explanation": "Aliases improve readability and resolve repeated table-name verbosity.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        }
+      ]
+    },
+    {
+      "id": "set-13",
+      "setId": 13,
+      "title": "TCS SQL Set 3 - Grouping, Subqueries, and Constraints",
+      "description": "GROUP BY, HAVING, nested queries, keys, and integrity rules often tested in SQL rounds.",
+      "domain": "SQL",
+      "topic": "SQL",
+      "questions": [
+        {
+          "id": "S13Q01",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Aggregation",
+          "difficulty": "easy",
+          "question": "Which clause groups rows sharing the same values?",
+          "options": [
+            "HAVING",
+            "COUNT(column_name)",
+            "GROUP BY",
+            "WHERE"
+          ],
+          "answerIndex": 2,
+          "explanation": "GROUP BY forms groups for aggregate calculations.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q02",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Aggregation",
+          "difficulty": "easy",
+          "question": "Which clause filters grouped results after aggregation?",
+          "options": [
+            "HAVING",
+            "COUNT(column_name)",
+            "WHERE",
+            "GROUP BY"
+          ],
+          "answerIndex": 0,
+          "explanation": "HAVING applies conditions to grouped rows/aggregates.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q03",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Aggregation",
+          "difficulty": "easy",
+          "question": "Which clause filters rows before aggregation happens?",
+          "options": [
+            "HAVING",
+            "COUNT(column_name)",
+            "GROUP BY",
+            "WHERE"
+          ],
+          "answerIndex": 3,
+          "explanation": "WHERE executes before GROUP BY and aggregate computation.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q04",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Aggregation",
+          "difficulty": "medium",
+          "question": "Which aggregate function counts only non-NULL values in an expression?",
+          "options": [
+            "COUNT(column_name)",
+            "HAVING",
+            "GROUP BY",
+            "WHERE"
+          ],
+          "answerIndex": 0,
+          "explanation": "COUNT(column) ignores NULLs unlike COUNT(*).",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q05",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Result Shaping",
+          "difficulty": "easy",
+          "question": "Which keyword returns only unique rows from SELECT output?",
+          "options": [
+            "GROUP BY",
+            "WHERE",
+            "DISTINCT",
+            "HAVING"
+          ],
+          "answerIndex": 2,
+          "explanation": "DISTINCT eliminates duplicate rows from the final projection.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q06",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Subqueries",
+          "difficulty": "medium",
+          "question": "What is a scalar subquery?",
+          "options": [
+            "A subquery that returns exactly one value",
+            "A subquery that returns multiple rows and multiple columns only",
+            "A subquery used only in FROM clause",
+            "A subquery that modifies table structure"
+          ],
+          "answerIndex": 0,
+          "explanation": "Scalar subqueries can be used where a single expression is expected.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q07",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Subqueries",
+          "difficulty": "easy",
+          "question": "Which operator is commonly used with subqueries that return multiple values?",
+          "options": [
+            "GROUP BY",
+            "HAVING",
+            "EXISTS",
+            "IN"
+          ],
+          "answerIndex": 3,
+          "explanation": "IN checks membership against value lists returned by subqueries.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q08",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Subqueries",
+          "difficulty": "medium",
+          "question": "Which operator checks whether at least one row is returned by a subquery?",
+          "options": [
+            "GROUP BY",
+            "IN",
+            "EXISTS",
+            "HAVING"
+          ],
+          "answerIndex": 2,
+          "explanation": "EXISTS stops on first match and is efficient for existence checks.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q09",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Subqueries",
+          "difficulty": "medium",
+          "question": "What is a correlated subquery?",
+          "options": [
+            "A subquery that references columns from the outer query",
+            "A subquery that always returns one row",
+            "A subquery that can run only with GROUP BY",
+            "A subquery that cannot use WHERE clause"
+          ],
+          "answerIndex": 0,
+          "explanation": "Correlated subqueries are evaluated in relation to outer-row context.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q10",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Constraints",
+          "difficulty": "easy",
+          "question": "Which key uniquely identifies each row in a table?",
+          "options": [
+            "FOREIGN KEY",
+            "UNIQUE",
+            "NOT NULL",
+            "PRIMARY KEY"
+          ],
+          "answerIndex": 3,
+          "explanation": "Primary key enforces uniqueness and disallows NULL values.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q11",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Constraints",
+          "difficulty": "easy",
+          "question": "Which key enforces referential integrity by pointing to another table key?",
+          "options": [
+            "FOREIGN KEY",
+            "PRIMARY KEY",
+            "UNIQUE",
+            "NOT NULL"
+          ],
+          "answerIndex": 0,
+          "explanation": "Foreign keys link child rows to parent-table key values.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q12",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Constraints",
+          "difficulty": "easy",
+          "question": "Which constraint ensures column values are unique (NULL handling DB-specific)?",
+          "options": [
+            "NOT NULL",
+            "UNIQUE",
+            "PRIMARY KEY",
+            "FOREIGN KEY"
+          ],
+          "answerIndex": 1,
+          "explanation": "UNIQUE prevents duplicate non-identical constrained values.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q13",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Constraints",
+          "difficulty": "easy",
+          "question": "Which constraint prevents NULL values in a column?",
+          "options": [
+            "FOREIGN KEY",
+            "UNIQUE",
+            "NOT NULL",
+            "PRIMARY KEY"
+          ],
+          "answerIndex": 2,
+          "explanation": "NOT NULL requires a value for every inserted/updated row.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q14",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Constraints",
+          "difficulty": "easy",
+          "question": "Which constraint validates values using a logical condition?",
+          "options": [
+            "PRIMARY KEY",
+            "UNIQUE",
+            "FOREIGN KEY",
+            "CHECK"
+          ],
+          "answerIndex": 3,
+          "explanation": "CHECK enforces domain rules through boolean expressions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q15",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "DML/DDL",
+          "difficulty": "medium",
+          "question": "Which SQL command removes all rows quickly and resets high-water behavior without row-by-row logging semantics?",
+          "options": [
+            "TRUNCATE",
+            "HAVING",
+            "GROUP BY",
+            "WHERE"
+          ],
+          "answerIndex": 0,
+          "explanation": "TRUNCATE removes all rows at table level and differs from DELETE behavior.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q16",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "DDL",
+          "difficulty": "easy",
+          "question": "Which command permanently removes a table definition and its data?",
+          "options": [
+            "GROUP BY",
+            "DROP TABLE",
+            "ALTER TABLE",
+            "CREATE TABLE"
+          ],
+          "answerIndex": 1,
+          "explanation": "DROP TABLE deletes both structure and data object definition.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q17",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "DDL",
+          "difficulty": "easy",
+          "question": "Which command changes an existing table structure?",
+          "options": [
+            "CREATE TABLE",
+            "GROUP BY",
+            "ALTER TABLE",
+            "DROP TABLE"
+          ],
+          "answerIndex": 2,
+          "explanation": "ALTER TABLE adds/modifies/drops columns and constraints.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q18",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "DDL",
+          "difficulty": "easy",
+          "question": "Which command creates a new table definition?",
+          "options": [
+            "DROP TABLE",
+            "GROUP BY",
+            "ALTER TABLE",
+            "CREATE TABLE"
+          ],
+          "answerIndex": 3,
+          "explanation": "CREATE TABLE defines schema, datatypes, and constraints.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q19",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Result Shaping",
+          "difficulty": "medium",
+          "question": "Which clause limits rows returned in Oracle 12c+ syntax?",
+          "options": [
+            "Use FETCH FIRST n ROWS ONLY clause",
+            "Use LIMIT n OFFSET m clause",
+            "Use TOP n clause",
+            "Use ROWNUM <= n predicate"
+          ],
+          "answerIndex": 0,
+          "explanation": "Oracle supports row limiting using FETCH FIRST/OFFSET syntax.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S13Q20",
+          "setId": 13,
+          "topic": "SQL",
+          "subtopic": "Null Handling",
+          "difficulty": "easy",
+          "question": "Which expression is used to replace NULL with alternate value in Oracle SQL?",
+          "options": [
+            "NVL()",
+            "ISNULL()",
+            "IFNULL()",
+            "DECODE()"
+          ],
+          "answerIndex": 0,
+          "explanation": "NVL returns fallback when expression evaluates to NULL.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        }
+      ]
+    },
+    {
+      "id": "set-14",
+      "setId": 14,
+      "title": "TCS PL/SQL Set 1 - PL/SQL Fundamentals",
+      "description": "Block structure, variables, datatypes, and executable section basics in PL/SQL.",
+      "domain": "PL/SQL",
+      "topic": "PL/SQL",
+      "questions": [
+        {
+          "id": "S14Q01",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Block Structure",
+          "difficulty": "easy",
+          "question": "Which keyword starts the executable section of a PL/SQL block?",
+          "options": [
+            "BEGIN",
+            "DECLARE",
+            "END",
+            "EXCEPTION"
+          ],
+          "answerIndex": 0,
+          "explanation": "BEGIN marks start of executable statements in a block.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q02",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Block Structure",
+          "difficulty": "easy",
+          "question": "Which keyword ends a PL/SQL block?",
+          "options": [
+            "EXCEPTION",
+            "END",
+            "BEGIN",
+            "DECLARE"
+          ],
+          "answerIndex": 1,
+          "explanation": "END terminates a PL/SQL block; often followed by semicolon.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q03",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Block Structure",
+          "difficulty": "easy",
+          "question": "Which optional section declares variables, cursors, and local types?",
+          "options": [
+            "END",
+            "EXCEPTION",
+            "DECLARE",
+            "BEGIN"
+          ],
+          "answerIndex": 2,
+          "explanation": "DECLARE section is used before BEGIN in anonymous blocks.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q04",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Error Handling",
+          "difficulty": "easy",
+          "question": "Which section handles runtime errors in PL/SQL?",
+          "options": [
+            "BEGIN",
+            "DECLARE",
+            "END",
+            "EXCEPTION"
+          ],
+          "answerIndex": 3,
+          "explanation": "EXCEPTION section traps and handles raised exceptions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q05",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Syntax",
+          "difficulty": "easy",
+          "question": "What symbol is used to assign values to variables in PL/SQL?",
+          "options": [
+            ":=",
+            "END",
+            "BEGIN",
+            "DECLARE"
+          ],
+          "answerIndex": 0,
+          "explanation": "PL/SQL assignment operator is :=, not equals sign.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q06",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Datatypes",
+          "difficulty": "easy",
+          "question": "Which datatype stores variable-length character strings in PL/SQL?",
+          "options": [
+            "PLS_INTEGER",
+            "BEGIN",
+            "VARCHAR2",
+            "DATE"
+          ],
+          "answerIndex": 2,
+          "explanation": "VARCHAR2 is standard variable-length string datatype.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q07",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Datatypes",
+          "difficulty": "easy",
+          "question": "Which datatype is specifically optimized for storing whole numbers in PL/SQL?",
+          "options": [
+            "PLS_INTEGER",
+            "NUMBER",
+            "VARCHAR2",
+            "DATE"
+          ],
+          "answerIndex": 0,
+          "explanation": "PLS_INTEGER is intended for integer arithmetic in PL/SQL, while NUMBER is a general numeric type.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q08",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Datatypes",
+          "difficulty": "easy",
+          "question": "Which datatype stores date and time values in Oracle?",
+          "options": [
+            "PLS_INTEGER",
+            "BEGIN",
+            "VARCHAR2",
+            "DATE"
+          ],
+          "answerIndex": 3,
+          "explanation": "DATE includes date plus time up to seconds in Oracle.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q09",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Output",
+          "difficulty": "easy",
+          "question": "Which built-in package procedure is used for debug output in SQL*Plus/SQL Developer?",
+          "options": [
+            "END",
+            "BEGIN",
+            "DBMS_OUTPUT.PUT_LINE",
+            "DECLARE"
+          ],
+          "answerIndex": 2,
+          "explanation": "DBMS_OUTPUT.PUT_LINE prints text when server output is enabled.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q10",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Block Structure",
+          "difficulty": "easy",
+          "question": "What is an anonymous PL/SQL block?",
+          "options": [
+            "A PL/SQL block without a stored name",
+            "A packaged procedure compiled in the data dictionary",
+            "A trigger that runs automatically on DML events",
+            "A cursor definition that returns multiple rows"
+          ],
+          "answerIndex": 0,
+          "explanation": "Anonymous blocks run directly and are not stored as schema objects.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q11",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Anchored Types",
+          "difficulty": "medium",
+          "question": "Which attribute can copy datatype from a table column?",
+          "options": [
+            "%ROWTYPE",
+            "BEGIN",
+            "END",
+            "%TYPE"
+          ],
+          "answerIndex": 3,
+          "explanation": "%TYPE anchors variable datatype to table column definition.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q12",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Anchored Types",
+          "difficulty": "medium",
+          "question": "Which attribute can define a record matching an entire table row?",
+          "options": [
+            "%ROWTYPE",
+            "%TYPE",
+            "BEGIN",
+            "END"
+          ],
+          "answerIndex": 0,
+          "explanation": "%ROWTYPE creates composite record matching row structure.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q13",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Control Structures",
+          "difficulty": "easy",
+          "question": "Which statement exits current loop immediately?",
+          "options": [
+            "CASE",
+            "EXIT",
+            "FOR loop",
+            "WHILE loop"
+          ],
+          "answerIndex": 1,
+          "explanation": "EXIT stops loop execution and control moves after loop.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q14",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Control Structures",
+          "difficulty": "easy",
+          "question": "Which loop iterates a fixed numeric range in PL/SQL?",
+          "options": [
+            "FOR loop",
+            "WHILE loop",
+            "CASE",
+            "EXIT"
+          ],
+          "answerIndex": 0,
+          "explanation": "FOR loop automatically handles counter initialization and increment.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q15",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Control Structures",
+          "difficulty": "easy",
+          "question": "Which loop checks condition before each iteration?",
+          "options": [
+            "EXIT",
+            "FOR loop",
+            "CASE",
+            "WHILE loop"
+          ],
+          "answerIndex": 3,
+          "explanation": "WHILE evaluates condition prior to entering each loop cycle.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q16",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Control Structures",
+          "difficulty": "easy",
+          "question": "Which conditional statement handles multi-way branching in PL/SQL?",
+          "options": [
+            "CASE",
+            "EXIT",
+            "FOR loop",
+            "WHILE loop"
+          ],
+          "answerIndex": 0,
+          "explanation": "CASE selects among multiple alternatives clearly.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q17",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Variables",
+          "difficulty": "medium",
+          "question": "Which keyword creates constants that cannot be reassigned?",
+          "options": [
+            "DECLARE",
+            "CONSTANT",
+            "BEGIN",
+            "END"
+          ],
+          "answerIndex": 1,
+          "explanation": "CONSTANT variables require initialization and stay immutable.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q18",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Control Structures",
+          "difficulty": "medium",
+          "question": "Which keyword can intentionally skip to next loop iteration in PL/SQL?",
+          "options": [
+            "FOR loop",
+            "WHILE loop",
+            "CONTINUE",
+            "EXIT"
+          ],
+          "answerIndex": 2,
+          "explanation": "CONTINUE transfers control to next loop cycle.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q19",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "SQL in PL/SQL",
+          "difficulty": "medium",
+          "question": "Which query form fetches a single row directly into PL/SQL variables?",
+          "options": [
+            "SELECT INTO",
+            "SELECT DISTINCT only",
+            "DESCRIBE TABLE",
+            "EXPLAIN PLAN only"
+          ],
+          "answerIndex": 0,
+          "explanation": "SELECT INTO fetches single-row query results into PL/SQL variables.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S14Q20",
+          "setId": 14,
+          "topic": "PL/SQL",
+          "subtopic": "Transactions",
+          "difficulty": "easy",
+          "question": "After DML inside PL/SQL, which command makes changes permanent?",
+          "options": [
+            "BEGIN",
+            "DECLARE",
+            "COMMIT",
+            "END"
+          ],
+          "answerIndex": 2,
+          "explanation": "COMMIT finalizes transaction changes in the session.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        }
+      ]
+    },
+    {
+      "id": "set-15",
+      "setId": 15,
+      "title": "TCS PL/SQL Set 2 - Cursors and Control Flow",
+      "description": "Implicit/explicit cursors, cursor attributes, loops, and conditional patterns.",
+      "domain": "PL/SQL",
+      "topic": "PL/SQL",
+      "questions": [
+        {
+          "id": "S15Q01",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursors",
+          "difficulty": "easy",
+          "question": "Which cursor is created automatically by Oracle for DML and single-row SELECT INTO?",
+          "options": [
+            "Explicit cursor",
+            "OPEN",
+            "FETCH",
+            "Implicit cursor"
+          ],
+          "answerIndex": 3,
+          "explanation": "Oracle manages implicit cursor lifecycle automatically.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q02",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursors",
+          "difficulty": "easy",
+          "question": "Which cursor is declared by developer for multi-row query processing?",
+          "options": [
+            "Explicit cursor",
+            "Implicit cursor",
+            "OPEN",
+            "FETCH"
+          ],
+          "answerIndex": 0,
+          "explanation": "Explicit cursors are declared, opened, fetched, and closed manually or via loops.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q03",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursor Attributes",
+          "difficulty": "medium",
+          "question": "Which cursor attribute indicates whether last FETCH returned a row?",
+          "options": [
+            "%ISOPEN",
+            "%FOUND",
+            "%NOTFOUND",
+            "%ROWCOUNT"
+          ],
+          "answerIndex": 1,
+          "explanation": "%FOUND is true when latest fetch or DML affected at least one row.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q04",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursor Attributes",
+          "difficulty": "medium",
+          "question": "Which cursor attribute indicates whether last FETCH failed to return a row?",
+          "options": [
+            "%ROWCOUNT",
+            "%ISOPEN",
+            "%NOTFOUND",
+            "%FOUND"
+          ],
+          "answerIndex": 2,
+          "explanation": "%NOTFOUND becomes true when no row is fetched.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q05",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursor Attributes",
+          "difficulty": "easy",
+          "question": "Which cursor attribute returns number of rows fetched/affected so far?",
+          "options": [
+            "%FOUND",
+            "%ISOPEN",
+            "%NOTFOUND",
+            "%ROWCOUNT"
+          ],
+          "answerIndex": 3,
+          "explanation": "%ROWCOUNT tracks processed row count for cursor or DML.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q06",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursor Attributes",
+          "difficulty": "easy",
+          "question": "Which cursor attribute indicates whether an explicit cursor is currently open?",
+          "options": [
+            "%ISOPEN",
+            "%NOTFOUND",
+            "%FOUND",
+            "%ROWCOUNT"
+          ],
+          "answerIndex": 0,
+          "explanation": "%ISOPEN helps avoid invalid close/open operations.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q07",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursors",
+          "difficulty": "easy",
+          "question": "Which statement opens an explicit cursor?",
+          "options": [
+            "Implicit cursor",
+            "FETCH",
+            "OPEN",
+            "Explicit cursor"
+          ],
+          "answerIndex": 2,
+          "explanation": "OPEN executes cursor query and establishes result set context.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q08",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursors",
+          "difficulty": "easy",
+          "question": "Which statement retrieves next row from an explicit cursor?",
+          "options": [
+            "FETCH",
+            "OPEN",
+            "Explicit cursor",
+            "Implicit cursor"
+          ],
+          "answerIndex": 0,
+          "explanation": "FETCH reads rows one-by-one into variables or records.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q09",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursors",
+          "difficulty": "easy",
+          "question": "Which statement releases an explicit cursor result set?",
+          "options": [
+            "Explicit cursor",
+            "OPEN",
+            "Implicit cursor",
+            "CLOSE"
+          ],
+          "answerIndex": 3,
+          "explanation": "CLOSE frees cursor resources after processing is complete.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q10",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Cursors",
+          "difficulty": "medium",
+          "question": "Which loop style automatically opens, fetches, and closes an explicit cursor?",
+          "options": [
+            "Implicit cursor",
+            "Cursor FOR loop",
+            "OPEN",
+            "Explicit cursor"
+          ],
+          "answerIndex": 1,
+          "explanation": "Cursor FOR loop abstracts cursor lifecycle operations.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q11",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Control Flow",
+          "difficulty": "easy",
+          "question": "Which command skips current loop iteration and continues with next?",
+          "options": [
+            "CONTINUE",
+            "IF...ELSE",
+            "ELSIF",
+            "Loop label"
+          ],
+          "answerIndex": 0,
+          "explanation": "CONTINUE avoids remaining statements in current iteration.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q12",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Control Flow",
+          "difficulty": "medium",
+          "question": "Which command can label a loop for targeted EXIT/CONTINUE in nested loops?",
+          "options": [
+            "IF...ELSE",
+            "ELSIF",
+            "CONTINUE",
+            "Loop label"
+          ],
+          "answerIndex": 3,
+          "explanation": "Labels improve control in nested iterative structures.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q13",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Control Flow",
+          "difficulty": "easy",
+          "question": "Which conditional structure is best for two-way branching?",
+          "options": [
+            "Loop label",
+            "CONTINUE",
+            "IF...ELSE",
+            "ELSIF"
+          ],
+          "answerIndex": 2,
+          "explanation": "IF...ELSE handles yes/no branching logic directly.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q14",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Control Flow",
+          "difficulty": "easy",
+          "question": "Which branch keyword adds additional condition checks in IF structure?",
+          "options": [
+            "CONTINUE",
+            "ELSIF",
+            "IF...ELSE",
+            "Loop label"
+          ],
+          "answerIndex": 1,
+          "explanation": "ELSIF allows multiple mutually exclusive condition checks.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q15",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "medium",
+          "question": "Which statement explicitly raises an exception by name?",
+          "options": [
+            "RAISE",
+            "TOO_MANY_ROWS",
+            "ZERO_DIVIDE",
+            "NO_DATA_FOUND"
+          ],
+          "answerIndex": 0,
+          "explanation": "RAISE triggers named user-defined or predefined exceptions.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q16",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "easy",
+          "question": "Which predefined exception is raised when SELECT INTO returns no rows?",
+          "options": [
+            "RAISE",
+            "TOO_MANY_ROWS",
+            "ZERO_DIVIDE",
+            "NO_DATA_FOUND"
+          ],
+          "answerIndex": 3,
+          "explanation": "NO_DATA_FOUND occurs when single-row fetch has zero matches.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q17",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "easy",
+          "question": "Which predefined exception is raised when SELECT INTO returns multiple rows?",
+          "options": [
+            "TOO_MANY_ROWS",
+            "RAISE",
+            "NO_DATA_FOUND",
+            "ZERO_DIVIDE"
+          ],
+          "answerIndex": 0,
+          "explanation": "TOO_MANY_ROWS indicates single-row fetch expected but many returned.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q18",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "easy",
+          "question": "Which predefined exception is raised for division by zero?",
+          "options": [
+            "TOO_MANY_ROWS",
+            "ZERO_DIVIDE",
+            "RAISE",
+            "NO_DATA_FOUND"
+          ],
+          "answerIndex": 1,
+          "explanation": "ZERO_DIVIDE is thrown when denominator evaluates to zero.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q19",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "medium",
+          "question": "Which keyword catches all unhandled exceptions in an EXCEPTION block?",
+          "options": [
+            "NO_DATA_FOUND",
+            "TOO_MANY_ROWS",
+            "WHEN OTHERS",
+            "RAISE"
+          ],
+          "answerIndex": 2,
+          "explanation": "WHEN OTHERS is generic fallback handler for remaining errors.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S15Q20",
+          "setId": 15,
+          "topic": "PL/SQL",
+          "subtopic": "Transactions",
+          "difficulty": "easy",
+          "question": "Which command undoes uncommitted changes in current transaction?",
+          "options": [
+            "ROLLBACK",
+            "Explicit cursor",
+            "Implicit cursor",
+            "%FOUND"
+          ],
+          "answerIndex": 0,
+          "explanation": "ROLLBACK reverts pending transaction changes.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://www.geeksforgeeks.org/interview-prep/tcs-nqt-preparation-guide-2026-videos-mcqs-questions-bank/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        }
+      ]
+    },
+    {
+      "id": "set-16",
+      "setId": 16,
+      "title": "TCS PL/SQL Set 3 - Procedures, Functions, and Packages",
+      "description": "Reusable program units, parameters, exceptions, and package-level organization in PL/SQL.",
+      "domain": "PL/SQL",
+      "topic": "PL/SQL",
+      "questions": [
+        {
+          "id": "S16Q01",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Program Units",
+          "difficulty": "easy",
+          "question": "Which statement creates a stored procedure in Oracle?",
+          "options": [
+            "CREATE PROCEDURE",
+            "CREATE OR REPLACE",
+            "Recursion",
+            "CREATE FUNCTION"
+          ],
+          "answerIndex": 0,
+          "explanation": "CREATE PROCEDURE defines a named executable unit stored in schema.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q02",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Program Units",
+          "difficulty": "easy",
+          "question": "Which statement creates a stored function in Oracle?",
+          "options": [
+            "CREATE PROCEDURE",
+            "CREATE OR REPLACE",
+            "Recursion",
+            "CREATE FUNCTION"
+          ],
+          "answerIndex": 3,
+          "explanation": "CREATE FUNCTION defines a named unit that returns a value.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q03",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Program Units",
+          "difficulty": "easy",
+          "question": "What is the key difference between procedure and function?",
+          "options": [
+            "A function must return a value, a procedure need not",
+            "A procedure can return only BOOLEAN, a function cannot return values",
+            "A function cannot accept parameters, a procedure must accept one",
+            "A procedure must be inside a package, a function cannot be packaged"
+          ],
+          "answerIndex": 0,
+          "explanation": "Functions return values usable in expressions; procedures may not return a value.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q04",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Parameters",
+          "difficulty": "easy",
+          "question": "Which parameter mode allows passing value into a subprogram only?",
+          "options": [
+            "DEFAULT",
+            "IN",
+            "OUT",
+            "IN OUT"
+          ],
+          "answerIndex": 1,
+          "explanation": "IN parameters are read-only inputs within subprogram body.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q05",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Parameters",
+          "difficulty": "easy",
+          "question": "Which parameter mode is used to return value to caller?",
+          "options": [
+            "IN OUT",
+            "DEFAULT",
+            "OUT",
+            "IN"
+          ],
+          "answerIndex": 2,
+          "explanation": "OUT parameters send data back from subprogram to caller.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q06",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Parameters",
+          "difficulty": "easy",
+          "question": "Which parameter mode supports both input and output behavior?",
+          "options": [
+            "IN",
+            "DEFAULT",
+            "OUT",
+            "IN OUT"
+          ],
+          "answerIndex": 3,
+          "explanation": "IN OUT parameters can be read and modified by subprogram.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q07",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Parameters",
+          "difficulty": "medium",
+          "question": "Which keyword enables default values for parameters?",
+          "options": [
+            "DEFAULT",
+            "OUT",
+            "IN",
+            "IN OUT"
+          ],
+          "answerIndex": 0,
+          "explanation": "DEFAULT allows omitting optional argument values at call time.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q08",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Invocation",
+          "difficulty": "medium",
+          "question": "Which SQL*Plus/SQL Developer command invokes a stored procedure directly?",
+          "options": [
+            "CALL",
+            "EXECUTE",
+            "CREATE PROCEDURE",
+            "DECLARE"
+          ],
+          "answerIndex": 1,
+          "explanation": "EXECUTE (or EXEC) is a client command used to run a stored procedure directly.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q09",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Packages",
+          "difficulty": "medium",
+          "question": "Which section defines public declarations of a package?",
+          "options": [
+            "CREATE PROCEDURE",
+            "CREATE FUNCTION",
+            "Package specification",
+            "Package body"
+          ],
+          "answerIndex": 2,
+          "explanation": "Package spec exposes public subprogram signatures and objects.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q10",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Packages",
+          "difficulty": "medium",
+          "question": "Which section contains implementation for package declarations?",
+          "options": [
+            "Package body",
+            "CREATE PROCEDURE",
+            "Package specification",
+            "CREATE FUNCTION"
+          ],
+          "answerIndex": 0,
+          "explanation": "Package body implements logic and can include private members.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q11",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Packages",
+          "difficulty": "medium",
+          "question": "Which package feature allows hiding helper routines from outside callers?",
+          "options": [
+            "Public declarations in package specification",
+            "Private members in package body",
+            "Synonyms created for the package",
+            "Granting EXECUTE to PUBLIC"
+          ],
+          "answerIndex": 1,
+          "explanation": "Members declared only in package body remain private to package implementation.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q12",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Program Units",
+          "difficulty": "easy",
+          "question": "Which statement modifies existing procedure/function definition?",
+          "options": [
+            "CREATE OR REPLACE",
+            "Recursion",
+            "CREATE FUNCTION",
+            "CREATE PROCEDURE"
+          ],
+          "answerIndex": 0,
+          "explanation": "CREATE OR REPLACE recompiles object while preserving grants in many cases.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q13",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Collections",
+          "difficulty": "medium",
+          "question": "Which data structure stores multiple elements indexed by integer or string in PL/SQL?",
+          "options": [
+            "VARRAY",
+            "CREATE PROCEDURE",
+            "Nested table",
+            "Associative array"
+          ],
+          "answerIndex": 3,
+          "explanation": "Associative arrays are key-value PL/SQL collections.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q14",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Collections",
+          "difficulty": "medium",
+          "question": "Which collection type has no upper bound and can be extended dynamically?",
+          "options": [
+            "VARRAY",
+            "Associative array",
+            "Nested table",
+            "CREATE PROCEDURE"
+          ],
+          "answerIndex": 2,
+          "explanation": "Nested tables are unbounded collections usable in PL/SQL and SQL contexts.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q15",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Collections",
+          "difficulty": "medium",
+          "question": "Which collection type has fixed maximum size and dense indexing?",
+          "options": [
+            "Associative array",
+            "VARRAY",
+            "CREATE PROCEDURE",
+            "Nested table"
+          ],
+          "answerIndex": 1,
+          "explanation": "VARRAY has bounded size and preserves element ordering.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q16",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "medium",
+          "question": "Which keyword defines a user-declared exception name?",
+          "options": [
+            "EXCEPTION",
+            "SQLCODE",
+            "CREATE PROCEDURE",
+            "SQLERRM"
+          ],
+          "answerIndex": 0,
+          "explanation": "User-defined exceptions are declared in declaration section using EXCEPTION.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q17",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "medium",
+          "question": "Which utility reports error message text for current exception?",
+          "options": [
+            "EXCEPTION",
+            "SQLCODE",
+            "CREATE PROCEDURE",
+            "SQLERRM"
+          ],
+          "answerIndex": 3,
+          "explanation": "SQLERRM returns error message associated with current error code.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q18",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Exceptions",
+          "difficulty": "medium",
+          "question": "Which utility reports Oracle error code number for current exception?",
+          "options": [
+            "SQLCODE",
+            "EXCEPTION",
+            "SQLERRM",
+            "CREATE PROCEDURE"
+          ],
+          "answerIndex": 0,
+          "explanation": "SQLCODE returns numeric code for most recent exception.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q19",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Program Units",
+          "difficulty": "medium",
+          "question": "Which feature allows one procedure/function to call itself?",
+          "options": [
+            "CREATE OR REPLACE",
+            "Recursion",
+            "CREATE PROCEDURE",
+            "CREATE FUNCTION"
+          ],
+          "answerIndex": 1,
+          "explanation": "Recursive subprograms call themselves until termination condition.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
+          ],
+          "confidence": "high",
+          "tcsRelevance": "high",
+          "reviewStatus": "pending",
+          "reviewChecklist": {
+            "syntaxCheck": false,
+            "answerCheck": false,
+            "explanationCheck": false
+          },
+          "reviewNotes": []
+        },
+        {
+          "id": "S16Q20",
+          "setId": 16,
+          "topic": "PL/SQL",
+          "subtopic": "Functions",
+          "difficulty": "hard",
+          "question": "Which clause can mark a function as deterministic for same-input same-output assumption?",
+          "options": [
+            "CREATE PROCEDURE",
+            "IN",
+            "CREATE FUNCTION",
+            "DETERMINISTIC"
+          ],
+          "answerIndex": 3,
+          "explanation": "DETERMINISTIC hints that function returns same result for identical inputs.",
+          "sourceType": "official-docs",
+          "sourceRef": [
+            "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/",
+            "https://prepinsta.com/tcs-ninja-placement-papers-and-questions/"
           ],
           "confidence": "high",
           "tcsRelevance": "high",

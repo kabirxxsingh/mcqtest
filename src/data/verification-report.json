@@ -1,16 +1,18 @@
 {
-  "verifiedAt": "2026-03-29T18:31:21.163Z",
-  "totalSets": 10,
-  "totalQuestions": 200,
+  "verifiedAt": "2026-03-29T19:30:24.606Z",
+  "totalSets": 16,
+  "totalQuestions": 320,
   "questionsByTopic": {
     "HTML": 40,
     "CSS": 40,
     "JavaScript": 80,
     "Mixed": 20,
-    "BestPractices": 20
+    "BestPractices": 20,
+    "SQL": 60,
+    "PL/SQL": 60
   },
   "confidenceBreakdown": {
-    "high": 160,
+    "high": 280,
     "medium": 40
   },
   "checks": {

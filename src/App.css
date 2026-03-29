@@ -82,6 +82,27 @@
   font-weight: 500;
 }
 
+
+.domain-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.domain-tab {
+  background: #f8fafc;
+  color: #1e293b;
+  border: 1px solid #dbe3ef;
+  box-shadow: none;
+}
+
+.domain-tab.active {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+}
+
 .set-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

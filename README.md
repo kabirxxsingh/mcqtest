@@ -1,10 +1,10 @@
 # VQuest - TCS UI MCQ Practice App
 
-VQuest is a deployable React-based MCQ practice game for HTML, CSS, and JavaScript with:
+VQuest is a deployable React-based MCQ practice game for Web/UI, SQL, and PL/SQL with:
 
-- **10 sets**
+- **16 sets**
 - **20 questions per set**
-- **200 total verified, rephrased questions**
+- **320 total verified, rephrased questions**
 - **`localStorage` persistence** for resume + history + weak-topic tracking
 - polished UI with positive visual tone and animations
 
@@ -47,7 +47,7 @@ Open the local URL shown by Vite (default: `http://localhost:5173`).
 ## Validation and build
 
 ```bash
-# regenerate + validate 10x20 question bank
+# regenerate + validate 16x20 question bank
 node scripts/build-question-bank.mjs
 
 # lint
